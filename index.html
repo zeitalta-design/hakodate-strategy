@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAKODATE TOURISM STRATEGY 2035</title>
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+<!-- ===== PDF QRコード近くに掲載する想定文 =====
+  候補1: 詳細版Webサイトはこちら
+  候補2: 函館観光戦略の全体像・経済効果・実行計画
+  候補3: 五稜郭2.0を含む戦略全体の詳細はこちら
+===== -->
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-upper">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <span class="header-logo__main en">HAKODATE 2035</span>
+        <span class="header-logo__sub en">Tourism Strategy</span>
+      </a>
+      <nav class="header-nav">
+        <a href="./" class="is-active">全体像</a>
+        <a href="summary/">サマリー</a>
+        <a href="why-hakodate/">なぜ函館</a>
+        <a href="analysis/">データ分析</a>
+        <a href="strategy/">全体戦略</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown__toggle">主要施策</button>
+          <div class="nav-dropdown__menu">
+            <a href="night-economy/">Night Economy</a>
+            <a href="goryokaku-2/">Goryokaku 2.0</a>
+            <a href="jomon/">Jomon Experience</a>
+            <a href="experience-liner/">Experience Liner</a>
+            <a href="summer-capital/">Summer Capital</a>
+          </div>
+        </div>
+        <a href="impact/">経済効果</a>
+        <a href="roadmap/">実行計画</a>
+        <a href="first-step/">最初の一歩</a>
+        <a href="proposal/">提案について</a>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="header-lower">
+    <div class="header-lower__inner">
+      <a href="#current">函館の現在地</a>
+      <a href="#issues">構造課題</a>
+      <a href="#strategy">戦略</a>
+      <a href="#projects">主要プロジェクト</a>
+      <a href="#impact">経済効果</a>
+      <a href="#roadmap">ロードマップ</a>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu__section">
+    <div class="mobile-menu__label">Navigation</div>
+    <a href="./" class="is-active">全体像</a>
+    <a href="summary/">サマリー</a>
+    <a href="why-hakodate/">なぜ函館</a>
+    <a href="analysis/">データ分析</a>
+    <a href="strategy/">全体戦略</a>
+    <button class="mobile-accordion__toggle">主要施策</button>
+    <div class="mobile-accordion__body">
+      <a href="night-economy/">Night Economy</a>
+      <a href="goryokaku-2/">Goryokaku 2.0</a>
+      <a href="jomon/">Jomon Experience</a>
+      <a href="experience-liner/">Experience Liner</a>
+      <a href="summer-capital/">Summer Capital</a>
+    </div>
+    <a href="impact/">経済効果</a>
+    <a href="roadmap/">実行計画</a>
+    <a href="first-step/">最初の一歩</a>
+    <a href="proposal/">提案について</a>
+  </div>
+  <div class="mobile-menu__section">
+    <div class="mobile-menu__label">このページ内</div>
+    <a href="#current">函館の現在地</a>
+    <a href="#issues">構造課題</a>
+    <a href="#strategy">戦略</a>
+    <a href="#projects">主要プロジェクト</a>
+    <a href="#impact">経済効果</a>
+    <a href="#roadmap">ロードマップ</a>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero hero--with-image">
+  <div class="container">
+    <p class="section-label en">Hakodate Tourism Strategy 2035</p>
+    <h1 class="hero-title en">From Stopover<br>to Stay.</h1>
+    <p class="hero-subtitle">
+      函館は、日本でも有数の観光満足度を誇る都市です。<br>
+      それでも多くの人が、短い滞在で去っていく。<br>
+      その理由をデータから読み解き、次の一手を考えました。
+    </p>
+    <p class="hero-desc">
+      函館市観光動向調査のデータをもとに、<br>
+      函館観光が抱える課題を整理し、「もっと長く滞在したくなる都市」への<br>
+      道筋を提案するサイトです。<br>
+      戦略の背景、施策、経済効果、実行計画を詳しくまとめています。
+    </p>
+    <div class="hero-cta mt-24" style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="summary/" class="btn btn--primary" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--navy-600);color:var(--white);border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">戦略サマリーを見る</a>
+      <a href="analysis/" class="btn btn--outline" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border:1px solid var(--navy-600);color:var(--navy-600);border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">データ分析を見る</a>
+      <a href="impact/" class="btn btn--outline" style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border:1px solid var(--navy-600);color:var(--navy-600);border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">経済効果を見る</a>
+    </div>
+    <div class="hero__image">
+      <img src="assets/img/hero/hakodate_overview_day.jpg" alt="函館山から見た函館市街の全景" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. 函館観光は今どこにいるのか ===== -->
+<section id="current" class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Current Position</p>
+    <h2 class="section-title">函館観光の現在地</h2>
+    <p class="section-lead">
+      数字だけを見ると、函館観光は順調に見えます。<br>
+      ただ、少し見方を変えると、次の課題も見えてきます。
+    </p>
+
+    <div class="grid-4 mt-40">
+      <div class="kpi-card fade-in-stagger">
+        <div class="stat-number en">92.7<span class="stat-unit">%</span></div>
+        <div class="stat-label">満足度</div>
+      </div>
+      <div class="kpi-card fade-in-stagger">
+        <div class="stat-number en">94.4<span class="stat-unit">%</span></div>
+        <div class="stat-label">再訪意向</div>
+      </div>
+      <div class="kpi-card fade-in-stagger">
+        <div class="stat-number en">45,920<span class="stat-unit">円</span></div>
+        <div class="stat-label">一人あたり消費額</div>
+      </div>
+      <div class="kpi-card fade-in-stagger">
+        <div class="stat-number en">71.6<span class="stat-unit">%</span></div>
+        <div class="stat-label">イベント不参加率</div>
+      </div>
+    </div>
+    <p class="body-text mt-16" style="font-size:13px;color:var(--gray-400);text-align:center;">
+      出典：函館市観光動向調査（令和5年度版・令和6年度版）
+    </p>
+  </div>
+</section>
+
+<!-- ===== 3. 公式データが示す観光構造 ===== -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Data Insight</p>
+    <h2 class="section-title">データから見えてくること</h2>
+    <p class="section-lead">
+      満足度は高いのに、滞在は短く、消費も伸びていない。<br>
+      その背景には、いくつかの共通した傾向があります。
+    </p>
+
+    <div class="mt-40">
+      <!-- 滞在構造 -->
+      <div class="analysis-block fade-in">
+        <div class="analysis-block__header">
+          <span class="analysis-block__num en">01</span>
+          <h3 class="analysis-block__title">滞在構造</h3>
+        </div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <span class="bar-label">旅行全体3日</span>
+            <div class="bar-track"><div class="bar-fill" style="width:40.7%"><span class="bar-value en">40.7%</span></div></div>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">函館2泊</span>
+            <div class="bar-track"><div class="bar-fill" style="width:41.7%"><span class="bar-value en">41.7%</span></div></div>
+          </div>
+        </div>
+        <div class="insight-box">
+          <div class="insight-box__label en">INSIGHT</div>
+          <p class="insight-box__text">2泊3日が典型的なパターンです。泊数自体が少ないわけではなく、2泊目の夜に「行ける場所がない」ことが課題になっています。</p>
+        </div>
+      </div>
+
+      <!-- 訪問先集中 -->
+      <div class="analysis-block fade-in">
+        <div class="analysis-block__header">
+          <span class="analysis-block__num en">02</span>
+          <h3 class="analysis-block__title">訪問先の集中</h3>
+        </div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <span class="bar-label">五稜郭</span>
+            <div class="bar-track"><div class="bar-fill" style="width:74.3%"><span class="bar-value en">74.3%</span></div></div>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">朝市</span>
+            <div class="bar-track"><div class="bar-fill" style="width:65.7%"><span class="bar-value en">65.7%</span></div></div>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">ウォーターフロント</span>
+            <div class="bar-track"><div class="bar-fill" style="width:64.0%"><span class="bar-value en">64.0%</span></div></div>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">函館山</span>
+            <div class="bar-track"><div class="bar-fill" style="width:60.7%"><span class="bar-value en">60.7%</span></div></div>
+          </div>
+        </div>
+        <div class="insight-box">
+          <div class="insight-box__label en">INSIGHT</div>
+          <p class="insight-box__text">多くの観光客は五稜郭、朝市、ウォーターフロント、函館山の4か所を訪れます。それぞれ60〜90分で見終わるため、短時間で回り切れてしまうのが実情です。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-40">
+      <a href="analysis/" class="strategy-link">データ分析の詳細を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. 5つの構造課題 ===== -->
+<section id="issues" class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Structural Challenges</p>
+    <h2 class="section-title">函館観光が抱える5つの課題</h2>
+    <p class="section-lead">
+      データを丁寧に見ていくと、<br>
+      函館が「通過される都市」にとどまっている理由が見えてきます。
+    </p>
+
+    <div class="grid-2 mt-40">
+      <div class="analysis-block fade-in">
+        <h3>夜の過ごし方が見つからない</h3>
+        <p class="body-text">夜景を見た後、どこへ行こう——。外国人観光客の19.0%が「夜に行ける場所がない」と感じています。20時以降の選択肢が、まだ十分に育っていません。</p>
+        <a href="night-economy/" class="strategy-link">Night Economy</a>
+      </div>
+      <div class="analysis-block fade-in">
+        <h3>五稜郭が「見て終わり」になっている</h3>
+        <p class="body-text">函館で最も多くの人が訪れる五稜郭。しかし平均滞在はわずか60分。タワーに上って公園を歩けば、それで終わりになっています。</p>
+        <a href="goryokaku-2/" class="strategy-link">Goryokaku 2.0</a>
+      </div>
+      <div class="analysis-block fade-in">
+        <h3>「する」観光が足りていない</h3>
+        <p class="body-text">イベントに参加しなかった観光客は71.6%。函館の観光は「見る」「食べる」が中心で、「自分で何かをする」体験がまだ少ないのが現状です。</p>
+        <a href="jomon/" class="strategy-link">Jomon Experience</a>
+      </div>
+      <div class="analysis-block fade-in">
+        <h3>新幹線から函館への移動が空白時間</h3>
+        <p class="body-text">新函館北斗駅から函館駅まで約18分。いまはただの移動時間ですが、この時間を活かす仕組みはまだありません。</p>
+        <a href="experience-liner/" class="strategy-link">Experience Liner</a>
+      </div>
+    </div>
+    <div class="grid-1 mt-16">
+      <div class="analysis-block fade-in">
+        <h3>涼しい夏を活かしきれていない</h3>
+        <p class="body-text">函館の夏は平均22℃。東京より13℃も涼しいこの気候は、猛暑が続く日本において大きな強みですが、都市としての戦略にはまだなっていません。</p>
+        <a href="summer-capital/" class="strategy-link">Summer Capital</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4.5 五稜郭補強ブロック ===== -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Why Goryokaku Matters</p>
+    <h2 class="section-title">五稜郭は、まだ"昼の名所"にとどまっている</h2>
+    <p class="body-text mt-16">
+      函館で最も多くの人が訪れる五稜郭は、現在も「展望して、公園を歩いて終わる」観光地です。<br>
+      しかし本来、五稜郭は歴史・都市・夜景が重なる、函館でもっとも再設計余地の大きい場所です。
+    </p>
+    <p class="body-text mt-16">
+      五稜郭は日本唯一、星形城郭を展望タワーから俯瞰できる観光地であり、夜には"上から見る夜景"としての価値を持ちます。<br>
+      だからこそ、五稜郭タワーの営業時間延長は、大規模投資の前に着手できる最もシンプルで効果的な第一歩です。
+    </p>
+
+    <!-- 3カラム データ補足 -->
+    <div class="grid-3 mt-32">
+      <div class="kpi-card">
+        <div class="stat-number en" style="font-size:32px;">60-90<span class="stat-unit">分</span></div>
+        <div class="stat-label">現在の滞在時間</div>
+      </div>
+      <div class="kpi-card">
+        <div class="stat-number en" style="font-size:32px;">30-40<span class="stat-unit">%</span></div>
+        <div class="stat-label">展望施設の夜来場比率</div>
+      </div>
+      <div class="kpi-card">
+        <div class="stat-number en" style="font-size:32px;">22<span class="stat-unit">:00</span></div>
+        <div class="stat-label">営業延長で夜来訪・周辺消費を拡大</div>
+      </div>
+    </div>
+    <p class="caption text-center mt-8">函館市観光動向調査、他展望施設事例をもとに整理</p>
+
+    <div class="text-center mt-32">
+      <a href="goryokaku-2/" class="strategy-link">Goryokaku 2.0 の詳細を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. Hakodate Tourism Strategy ===== -->
+<section id="strategy" class="section section--navy">
+  <div class="container fade-in">
+    <p class="section-label en">Strategy Framework</p>
+    <h2 class="section-title">Hakodate Tourism Strategy</h2>
+    <p class="section-lead">
+      これらの課題に対して、<br>
+      5つの具体的なプロジェクトを提案しています。
+    </p>
+
+    <!-- Strategy structure image -->
+    <div class="section-image section-image--landscape mt-40">
+      <img src="assets/img/hero/hakodate_overview_night.jpg" alt="函館山からの夜景" loading="lazy">
+    </div>
+
+    <div class="text-center mt-40" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="strategy/" class="strategy-link" style="background:var(--white);color:var(--navy-800);">全体戦略を見る</a>
+      <a href="future-map/" class="strategy-link" style="background:var(--white);color:var(--navy-800);">未来マップを見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. 主要プロジェクト ===== -->
+<section id="projects" class="section">
+  <div class="container--wide fade-in">
+    <p class="section-label en">Key Projects</p>
+    <h2 class="section-title">主要プロジェクト</h2>
+    <p class="section-lead">
+      ここからは、具体的な取り組みです。<br>
+      それぞれは別々の施策ですが、組み合わせることで「もっと滞在したくなる函館」をつくります。
+    </p>
+
+    <div class="grid-3 mt-40">
+      <a href="night-economy/" class="project-card fade-in-stagger">
+        <div class="project-card__img">
+          <img src="assets/img/projects/night_market.jpg" alt="Night Economy コンセプトイメージ" loading="lazy">
+        </div>
+        <p class="project-card__img-caption en">Concept Visualization</p>
+        <div class="project-card__label en">Project 01</div>
+        <div class="project-card__title">Night Economy</div>
+        <div class="project-card__subtitle">20時以降の消費機会を創出</div>
+        <p class="project-card__desc">港・元町・函館山後の夜間消費を設計。ナイトマーケット、バーストリート、夜散策で2泊目夜の空白を解消する。</p>
+        <span class="project-card__link">詳細</span>
+      </a>
+      <a href="goryokaku-2/" class="project-card fade-in-stagger">
+        <div class="project-card__img">
+          <img src="assets/img/projects/goryokaku_lightup.jpg" alt="Goryokaku 2.0 コンセプトイメージ" loading="lazy">
+        </div>
+        <p class="project-card__img-caption en">Concept Visualization</p>
+        <div class="project-card__label en">Project 02</div>
+        <div class="project-card__title">Goryokaku 2.0</div>
+        <div class="project-card__subtitle">五稜郭を第2の滞在拠点へ</div>
+        <p class="project-card__desc">訪問率74.3%・滞在60〜90分の五稜郭を、歴史体験と夜間活用で再設計。日本唯一「上から夜景として見える城郭」の価値を活かし、22時営業を起点に3〜4時間滞在の拠点へ転換する。</p>
+        <span class="project-card__link">詳細</span>
+      </a>
+      <a href="jomon/" class="project-card fade-in-stagger">
+        <div class="project-card__img">
+          <img src="assets/img/projects/jomon.jpg" alt="Jomon Experience コンセプトイメージ" loading="lazy">
+        </div>
+        <p class="project-card__img-caption en">Concept Visualization</p>
+        <div class="project-card__label en">Project 03</div>
+        <div class="project-card__title">Jomon Experience</div>
+        <div class="project-card__subtitle">世界遺産を体験消費に</div>
+        <p class="project-card__desc">イベント不参加率71.6%の構造を転換。縄文遺跡群を「見る」から「体験する」へ。半日滞在型の消費装置に。</p>
+        <span class="project-card__link">詳細</span>
+      </a>
+      <a href="experience-liner/" class="project-card fade-in-stagger">
+        <div class="project-card__img">
+          <img src="assets/img/projects/liner_hero_concept.jpg" alt="Experience Liner コンセプトイメージ" loading="lazy">
+        </div>
+        <p class="project-card__img-caption en">Concept Visualization</p>
+        <div class="project-card__label en">Project 04</div>
+        <div class="project-card__title">Experience Liner</div>
+        <div class="project-card__subtitle">移動時間を体験に変える</div>
+        <p class="project-card__desc">新函館北斗〜函館の移動を観光体験化。到着前から観光が始まる導線を設計し、新幹線利用率の向上を図る。</p>
+        <span class="project-card__link">詳細</span>
+      </a>
+      <a href="summer-capital/" class="project-card fade-in-stagger">
+        <div class="project-card__img">
+          <img src="assets/img/projects/summer_hakodate.jpg" alt="Summer Capital コンセプトイメージ" loading="lazy">
+        </div>
+        <p class="project-card__img-caption en">Concept Visualization</p>
+        <div class="project-card__label en">Project 05</div>
+        <div class="project-card__title">Summer Capital</div>
+        <div class="project-card__subtitle">日本の避暑都市宣言</div>
+        <p class="project-card__desc">夏季22℃の気候優位を都市ブランドに。ワーケーション、長期滞在、夏季イベント集約で通年型観光の弱点を補完。</p>
+        <span class="project-card__link">詳細</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. 経済効果 ===== -->
+<section id="impact" class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Expected Impact</p>
+    <h2 class="section-title">この戦略で期待できること</h2>
+    <p class="section-lead">
+      5つの取り組みが動き始めると、<br>
+      函館の観光経済はどのくらい変わるのか。試算を示します。
+    </p>
+
+    <div class="grid-3 mt-40">
+      <div class="kpi-card fade-in-stagger">
+        <div class="stat-number en">+150<span class="stat-unit">億円</span></div>
+        <div class="stat-label">年間観光消費増加（想定）</div>
+      </div>
+      <div class="kpi-card fade-in-stagger">
+        <div class="stat-number en">3-4<span class="stat-unit">倍</span></div>
+        <div class="stat-label">五稜郭エリア滞在時間</div>
+      </div>
+      <div class="kpi-card fade-in-stagger">
+        <div class="stat-number en">+500<span class="stat-unit">人</span></div>
+        <div class="stat-label">雇用創出（想定）</div>
+      </div>
+    </div>
+
+    <div class="text-center mt-40">
+      <a href="impact/" class="strategy-link">経済効果の詳細</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. 実行ロードマップ ===== -->
+<section id="roadmap" class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Roadmap</p>
+    <h2 class="section-title">実行ロードマップ</h2>
+    <p class="section-lead">
+      構想だけでは意味がありません。<br>
+      いつ、何から始めるのか。実行の道筋を示します。
+    </p>
+
+    <div class="timeline mt-40">
+      <div class="timeline-item fade-in">
+        <div class="timeline-item__period en">0-90 DAYS</div>
+        <div class="timeline-item__title">調査・合意形成</div>
+        <p class="timeline-item__desc">観光動向の追加調査、関係者ヒアリング、庁内検討会議の立ち上げ。</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-item__period en">90-180 DAYS</div>
+        <div class="timeline-item__title">実証実験</div>
+        <p class="timeline-item__desc">夜間イベント試行、五稜郭営業延長の試験運用、体験コンテンツのプロトタイプ実施。</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-item__period en">1-3 YEARS</div>
+        <div class="timeline-item__title">取り組みを広げる</div>
+        <p class="timeline-item__desc">Night Economy本格展開、Goryokaku 2.0設計着手、Experience Liner運行開始。</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-item__period en">3-10 YEARS</div>
+        <div class="timeline-item__title">都市のイメージを定着させる</div>
+        <p class="timeline-item__desc">Summer Capital宣言、滞在型観光都市としてのブランド確立、民間投資の本格化。</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-40">
+      <a href="roadmap/" class="strategy-link">ロードマップの詳細</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. 提案の趣旨 ===== -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">About This Proposal</p>
+    <h2 class="section-title">提案の趣旨</h2>
+    <p class="body-text mt-16">
+      この提案は、函館市の観光データをもとに、<br>
+      いまの函館観光が抱えている課題を整理し、「もっと長く過ごしたくなる都市」への<br>
+      道筋を考えたものです。
+    </p>
+    <p class="body-text mt-16">
+      観光PRのための資料ではありません。函館がすでに持っている魅力を、<br>
+      どうすれば滞在や消費につなげられるか——その視点から整理した政策提案です。
+    </p>
+    <p class="body-text mt-16">
+      市長をはじめ、市の関係者や市民の皆さまに、<br>
+      議論の出発点として活用いただければと考えています。
+    </p>
+    <div class="mt-32">
+      <a href="proposal/" class="strategy-link">提案概要を見る</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand en">HAKODATE 2035</div>
+        <p class="footer-desc">函館観光の構造課題と転換戦略 — 市民提言</p>
+      </div>
+      <div>
+        <div class="footer-heading">分析</div>
+        <div class="footer-links">
+          <a href="analysis/">構造分析</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">施策</div>
+        <div class="footer-links">
+          <a href="goryokaku-2/">Goryokaku 2.0</a>
+          <a href="night-economy/">Night Economy</a>
+          <a href="jomon/">Jomon Experience</a>
+          <a href="experience-liner/">Experience Liner</a>
+          <a href="summer-capital/">Summer Capital</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">計画</div>
+        <div class="footer-links">
+          <a href="strategy/">全体戦略</a>
+          <a href="future-map/">未来マップ</a>
+          <a href="impact/">経済効果</a>
+          <a href="roadmap/">ロードマップ</a>
+          <a href="proposal/">提案について</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="font-size:12px;color:var(--gray-400);margin-bottom:6px;">お問い合わせ：<a href="mailto:futoshitatoki@me.com" style="color:var(--gray-400);">futoshitatoki@me.com</a></p>
+      <p>&copy; 2026 Hakodate Tourism Strategy — 函館市民提言</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

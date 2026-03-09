@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" font-family="'Inter','Noto Sans JP',-apple-system,sans-serif">
+  <rect width="720" height="380" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="60" y="44" font-size="18" font-weight="800" fill="#1a2a3a" letter-spacing="-0.3">8月平均気温（2024〜2025平均）</text>
+  <text x="60" y="68" font-size="12" fill="#999" font-weight="500">気象庁 月別実績値をもとに作成</text>
+
+  <!-- Grid lines -->
+  <line x1="180" y1="100" x2="660" y2="100" stroke="#eee" stroke-width="1"/>
+  <line x1="180" y1="170" x2="660" y2="170" stroke="#eee" stroke-width="1"/>
+  <line x1="180" y1="240" x2="660" y2="240" stroke="#eee" stroke-width="1"/>
+
+  <!-- Scale labels -->
+  <text x="670" y="104" font-size="11" fill="#bbb" font-weight="500" text-anchor="start">30℃</text>
+  <text x="670" y="174" font-size="11" fill="#bbb" font-weight="500" text-anchor="start">25℃</text>
+  <text x="670" y="244" font-size="11" fill="#bbb" font-weight="500" text-anchor="start">20℃</text>
+
+  <!-- Bars: scale 0℃=310, 35℃=100 => 1℃ = 6px -->
+  <!-- 函館 24.8℃ => y=310-(24.8*6)=161.2, h=148.8 -->
+  <rect x="60" y="161" width="120" height="149" rx="4" fill="#2d4a6f"/>
+  <text x="120" y="149" font-size="22" font-weight="800" fill="#2d4a6f" text-anchor="middle">24.8<tspan font-size="13" font-weight="500" fill="#777">℃</tspan></text>
+  <text x="120" y="330" font-size="15" font-weight="700" fill="#1a2a3a" text-anchor="middle">函館</text>
+
+  <!-- 東京 29.3℃ => y=310-(29.3*6)=134.2, h=175.8 -->
+  <rect x="260" y="134" width="120" height="176" rx="4" fill="#ddd"/>
+  <text x="320" y="122" font-size="22" font-weight="800" fill="#999" text-anchor="middle">29.3<tspan font-size="13" font-weight="500">℃</tspan></text>
+  <text x="320" y="330" font-size="15" font-weight="700" fill="#777" text-anchor="middle">東京</text>
+
+  <!-- 京都 30.2℃ => y=310-(30.2*6)=128.8, h=181.2 -->
+  <rect x="460" y="129" width="120" height="181" rx="4" fill="#ddd"/>
+  <text x="520" y="117" font-size="22" font-weight="800" fill="#999" text-anchor="middle">30.2<tspan font-size="13" font-weight="500">℃</tspan></text>
+  <text x="520" y="330" font-size="15" font-weight="700" fill="#777" text-anchor="middle">京都</text>
+
+  <!-- Baseline -->
+  <line x1="50" y1="310" x2="650" y2="310" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Difference annotations -->
+  <text x="220" y="356" font-size="11" fill="#2d4a6f" font-weight="600" text-anchor="middle">東京より −4.5℃</text>
+  <text x="490" y="356" font-size="11" fill="#2d4a6f" font-weight="600" text-anchor="middle">京都より −5.4℃</text>
+</svg>

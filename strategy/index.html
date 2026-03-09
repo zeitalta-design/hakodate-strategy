@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>戦略設計 — HAKODATE TOURISM STRATEGY</title>
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-upper">
+    <div class="header-inner">
+      <a href="../" class="header-logo">
+        <span class="header-logo__main en">HAKODATE 2035</span>
+        <span class="header-logo__sub en">Tourism Strategy</span>
+      </a>
+      <nav class="header-nav">
+        <a href="../">全体像</a>
+        <a href="../summary/">サマリー</a>
+        <a href="../why-hakodate/">なぜ函館</a>
+        <a href="../analysis/">データ分析</a>
+        <a href="../strategy/" class="is-active">全体戦略</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown__toggle">主要施策</button>
+          <div class="nav-dropdown__menu">
+            <a href="../night-economy/">Night Economy</a>
+            <a href="../goryokaku-2/">Goryokaku 2.0</a>
+            <a href="../jomon/">Jomon Experience</a>
+            <a href="../experience-liner/">Experience Liner</a>
+            <a href="../summer-capital/">Summer Capital</a>
+          </div>
+        </div>
+        <a href="../impact/">経済効果</a>
+        <a href="../roadmap/">実行計画</a>
+        <a href="../first-step/">最初の一歩</a>
+        <a href="../proposal/">提案について</a>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu__section">
+    <div class="mobile-menu__label">Navigation</div>
+    <a href="../">全体像</a>
+    <a href="../summary/">サマリー</a>
+    <a href="../why-hakodate/">なぜ函館</a>
+    <a href="../analysis/">データ分析</a>
+    <a href="../strategy/" class="is-active">全体戦略</a>
+    <button class="mobile-accordion__toggle">主要施策</button>
+    <div class="mobile-accordion__body">
+      <a href="../night-economy/">Night Economy</a>
+      <a href="../goryokaku-2/">Goryokaku 2.0</a>
+      <a href="../jomon/">Jomon Experience</a>
+      <a href="../experience-liner/">Experience Liner</a>
+      <a href="../summer-capital/">Summer Capital</a>
+    </div>
+    <a href="../impact/">経済効果</a>
+    <a href="../roadmap/">実行計画</a>
+    <a href="../first-step/">最初の一歩</a>
+    <a href="../proposal/">提案について</a>
+  </div>
+</div>
+
+<main>
+
+<!-- Hero -->
+<section class="page-hero">
+  <div class="container">
+    <p class="page-hero__label en">Strategic Design</p>
+    <h1 class="page-hero__title">函館観光の戦略設計</h1>
+    <p class="page-hero__subtitle">
+      バラバラのアイデアを並べたわけではありません。<br>
+      データから課題を読み取り、そこから戦略を導き、<br>
+      具体的な施策を設計しました。<br>
+      このページでは、その全体の組み立てを説明します。
+    </p>
+  </div>
+</section>
+
+<!-- Chapter 1: 戦略の結論 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 01 — Conclusion First</p>
+    <h2 class="section-title">戦略の結論</h2>
+    <p class="body-text mt-16">
+      函館観光の伸びしろは、集客の問題ではなく、都市の構造にあります。
+    </p>
+    <p class="body-text mt-16">
+      満足度92.7%。再訪意向94.4%。
+      函館は、訪れた人のほぼ全員が「満足した」「また来たい」と答える都市です。<br>
+      にもかかわらず、一人あたりの消費は全国平均を下回り、
+      滞在は2泊が大半。夜景を見た後に使えるお金の行き先がありません。
+    </p>
+    <p class="body-text mt-16">
+      この矛盾が意味しているのは明確です。<br>
+      函館は、魅力が足りないわけではない。
+      魅力を滞在や消費につなげる仕組みが、まだ整っていないということです。
+    </p>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">戦略の核心</div>
+      <p class="insight-box__text">
+        「通過される都市」から「滞在したくなる都市」へ。<br>
+        新しい観光名所をつくることよりも、
+        いまある魅力を「もう少し長く」「もう少し深く」楽しめる仕組みに変えていくことが大切です。
+      </p>
+    </div>
+
+    <div class="grid-2 mt-32">
+      <div class="kpi-card">
+        <div class="stat-number en">+150<span class="stat-unit">億円</span></div>
+        <div class="stat-label">経済効果（5施策合計）</div>
+      </div>
+      <div class="kpi-card">
+        <div class="stat-number en">5<span class="stat-unit">施策</span></div>
+        <div class="stat-label">すべてデータ根拠から導出</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter 2: 函館観光の現在地 -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 02 — Current Position</p>
+    <h2 class="section-title">函館観光の現在地</h2>
+    <p class="body-text mt-16">
+      戦略を考える前に、まず函館観光のいまの姿を正確に把握しておく必要があります。<br>
+      <a href="../analysis/" class="strategy-link">分析ページ</a>で詳述した9つの構造分析から、
+      戦略に直結する4つの構造課題を抽出した。
+    </p>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>構造課題①：滞在時間が短い</h3>
+        <p class="body-text">
+          国内客の主力は2泊。五稜郭の平均滞在は60分。<br>
+          「見たら終わり」の構造が滞在延長を阻んでいる。
+          3泊目に進む理由が、都市側に用意されていない。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>構造課題②：夜の消費構造がない</h3>
+        <p class="body-text">
+          20時以降に「行ける場所」がない。
+          夜景を見た後の選択肢が「ホテルに帰る」しかない。<br>
+          2泊目夜の不満率19.0%。
+          夜の空白が、消費と滞在の天井を決めている。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>構造課題③：体験消費が弱い</h3>
+        <p class="body-text">
+          消費構造の中で「体験・入場」はわずか5%。<br>
+          飲食と土産に偏り、単価の高い体験消費が育っていない。
+          世界遺産・歴史資産が消費装置として機能していない。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>構造課題④：夏季優位が未活用</h3>
+        <p class="body-text">
+          函館の7〜8月平均気温は22℃。東京との差は13℃。<br>
+          この恒常的な気候優位が、
+          都市ブランドとしても長期滞在の導線としても設計されていない。
+        </p>
+      </div>
+    </div>
+
+    <div class="flow-diagram mt-32">
+      <div class="flow-step">データ分析</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step" style="border-color:var(--red);color:var(--red);">4つの構造課題</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">戦略方向</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">5つの施策</div>
+    </div>
+    <p class="caption text-center mt-16">本提案の因果構造：すべての施策はデータから逆算して設計されている</p>
+  </div>
+</section>
+
+<!-- Chapter 3: 戦略の基本思想 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 03 — Strategic Philosophy</p>
+    <h2 class="section-title">戦略の基本思想</h2>
+    <p class="body-text mt-16">
+      本戦略は、3つの基本思想に基づいて設計されている。
+    </p>
+
+    <div class="grid-3 mt-32">
+      <div class="analysis-block">
+        <h3>新しくつくるのではなく、再編集する</h3>
+        <p class="body-text">
+          函館にはすでに十分な都市資源がある。
+          五稜郭、夜景、港、食、縄文遺跡、夏の気候。<br>
+          必要なのはこれらを増やすことではなく、
+          「滞在」「消費」「回遊」の文脈で再編集することである。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>一つひとつではなく、つながりで効かせる</h3>
+        <p class="body-text">
+          一つの施策が一つの課題を解決するのではない。<br>
+          5つの施策が相互に連動し、
+          都市全体の滞在構造を変えることで、
+          個別施策の合計以上の効果を生む。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>段階的に、でも確実に</h3>
+        <p class="body-text">
+          一足飛びに理想形を目指さない。<br>
+          短期（実証）→ 中期（本格稼働）→ 長期（都市ブランド確立）の
+          3段階で成果を積み上げる設計にしている。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">設計原則</div>
+      <p class="insight-box__text">
+        函館らしさを壊して新しい都市をつくろうとしているわけではありません。<br>
+        すでにある函館の魅力を、いまの旅行者が楽しめる形に編み直す。
+        それがこの戦略の基本的な考え方です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter 4: 上位戦略の4本柱 -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 04 — Four Pillars</p>
+    <h2 class="section-title">上位戦略の4本柱</h2>
+    <p class="body-text mt-16">
+      4つの構造課題に対して、4つの上位戦略を設定した。<br>
+      すべての施策は、この4本柱のいずれかに紐づく。
+    </p>
+
+    <div class="grid-2 mt-40">
+      <div class="analysis-block">
+        <h3>Pillar 1：滞在都市化</h3>
+        <p class="body-text">
+          <strong>課題：</strong>滞在時間が短く、2泊で完結する構造<br>
+          <strong>方向：</strong>「通過される都市」から「滞在される都市」へ転換する
+        </p>
+        <p class="body-text mt-8">
+          時間消費を増やす仕組みを各拠点に組み込む。
+          五稜郭を60分→3〜4時間の滞在拠点に変え、
+          移動そのものを体験に変え、
+          夜間の消費導線を設計する。
+          3泊目に進む理由を、都市側が用意する。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>Pillar 2：夜経済の創出</h3>
+        <p class="body-text">
+          <strong>課題：</strong>20時以降の消費構造が存在しない<br>
+          <strong>方向：</strong>夜の空白を埋め、消費と滞在の天井を引き上げる
+        </p>
+        <p class="body-text mt-8">
+          港エリア・元町・五稜郭に夜間消費の拠点を設計する。
+          夜景の後に「もう一つの夜」をつくる。
+          ナイトマーケット、ライトアップ、夜間体験で
+          2泊目夜の不満を解消し、3泊目への動機を生む。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>Pillar 3：体験型都市化</h3>
+        <p class="body-text">
+          <strong>課題：</strong>体験消費がわずか5%、「見る観光」に偏重<br>
+          <strong>方向：</strong>「見る」から「体験する」へ転換し、消費単価を引き上げる
+        </p>
+        <p class="body-text mt-8">
+          五稜郭の歴史体験、縄文の世界遺産体験、
+          移動の体験化（Experience Liner）。
+          「お金を払ってでも体験したい」コンテンツを設計し、
+          体験消費比率を5%→15%へ引き上げる。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>Pillar 4：避暑都市ブランディング</h3>
+        <p class="body-text">
+          <strong>課題：</strong>夏季の気候優位が都市戦略として未活用<br>
+          <strong>方向：</strong>「日本の避暑首都」として都市ブランドを確立する
+        </p>
+        <p class="body-text mt-8">
+          気温差13℃の構造的優位を都市ブランドに転換する。
+          夏季イベント集約、ワーケーション誘致、長期滞在設計。
+          温暖化が進むほど価値が増す、
+          時間とともに強くなる都市戦略。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter 5: 5つの主要施策 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 05 — Five Projects</p>
+    <h2 class="section-title">5つの主要施策</h2>
+    <p class="body-text mt-16">
+      4つの上位戦略を実現するために、5つの施策を設計した。<br>
+      各施策は独立したアイデアではなく、
+      構造課題から逆算して導出されたものである。
+    </p>
+
+    <div class="analysis-block mt-40">
+      <div class="figure mb-16">
+        <img src="../assets/img/projects/night_market.jpg" alt="Night Economy コンセプト" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        <p class="figure__caption"><strong>Concept Visualization</strong> — 夜の港エリアに消費導線を設計する</p>
+      </div>
+      <h3>施策① Night Economy — 夜間経済圏の創出</h3>
+      <p class="body-text mt-8">
+        <strong>解決する課題：</strong>20時以降の消費構造の不在、2泊目夜の不満率19.0%<br>
+        <strong>変えること：</strong>港エリア・元町・五稜郭に夜間消費の導線を設計。ナイトマーケット、バーストリート、夜間ライトアップで「夜景の後のもう一つの夜」を創出<br>
+        <strong>波及効果：</strong>夜間消費+38億円。宿泊延長への動機形成。飲食・小売への波及<br>
+        <strong>上位戦略：</strong>夜経済の創出 ／ 滞在都市化
+      </p>
+      <p class="body-text mt-8"><a href="../night-economy/" class="strategy-link">Night Economy 詳細ページへ →</a></p>
+    </div>
+
+    <div class="analysis-block mt-24">
+      <div class="figure mb-16">
+        <img src="../assets/img/projects/goryokaku_lightup.jpg" alt="Goryokaku 2.0 コンセプト" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        <p class="figure__caption"><strong>Concept Visualization</strong> — 五稜郭の星形を活かした夜間ライトアップ</p>
+      </div>
+      <h3>施策② Goryokaku 2.0 — 五稜郭の第2滞在拠点化</h3>
+      <p class="body-text mt-8">
+        <strong>解決する課題：</strong>五稜郭の滞在時間60分、「見て終わり」の構造<br>
+        <strong>変えること：</strong>歴史体験施設（VR・コスチューム・立体展示）の導入と夜間営業延長。「見る場所」から「滞在拠点」への転換<br>
+        <strong>波及効果：</strong>滞在60分→3〜4時間。消費+27億円。周辺飲食への波及<br>
+        <strong>上位戦略：</strong>滞在都市化 ／ 体験型都市化 ／ 夜経済の創出
+      </p>
+      <p class="body-text mt-8"><a href="../goryokaku-2/" class="strategy-link">Goryokaku 2.0 詳細ページへ →</a></p>
+    </div>
+
+    <div class="analysis-block mt-24">
+      <div class="figure mb-16">
+        <img src="../assets/img/projects/jomon.jpg" alt="Jomon Experience コンセプト" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        <p class="figure__caption"><strong>Concept Visualization</strong> — 縄文遺跡を体験消費装置に再設計する</p>
+      </div>
+      <h3>施策③ Jomon Experience — 世界遺産の体験消費化</h3>
+      <p class="body-text mt-8">
+        <strong>解決する課題：</strong>体験消費比率5%、世界遺産が消費装置として未機能<br>
+        <strong>変えること：</strong>土器制作、縄文食体験、学びプログラムで半日滞在型の体験消費装置を設計。「見る世界遺産」から「体験する世界遺産」へ<br>
+        <strong>波及効果：</strong>消費+18億円。体験単価の引き上げ。教育旅行・富裕層の取り込み<br>
+        <strong>上位戦略：</strong>体験型都市化 ／ 避暑都市ブランディング
+      </p>
+      <p class="body-text mt-8"><a href="../jomon/" class="strategy-link">Jomon Experience 詳細ページへ →</a></p>
+    </div>
+
+    <div class="analysis-block mt-24">
+      <div class="figure mb-16">
+        <img src="../assets/img/projects/liner_hero_concept.jpg" alt="Experience Liner コンセプト" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        <p class="figure__caption"><strong>Concept Visualization</strong> — 18分の移動を函館体験の序章に変える</p>
+      </div>
+      <h3>施策④ Experience Liner — 移動の体験化</h3>
+      <p class="body-text mt-8">
+        <strong>解決する課題：</strong>新函館北斗→函館の18分が「ただの移動」として消費されている<br>
+        <strong>変えること：</strong>2両編成の体験型ライナーで、到着前から観光が始まる導線を設計。ラウンジ車両・展望体験で18分を函館の序章に変える<br>
+        <strong>波及効果：</strong>消費+12億円。到着体験の向上。函館ブランドの第一印象形成<br>
+        <strong>上位戦略：</strong>滞在都市化 ／ 体験型都市化
+      </p>
+      <p class="body-text mt-8"><a href="../experience-liner/" class="strategy-link">Experience Liner 詳細ページへ →</a></p>
+    </div>
+
+    <div class="analysis-block mt-24">
+      <div class="figure mb-16">
+        <img src="../assets/img/projects/summer_hakodate.jpg" alt="Summer Capital コンセプト" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        <p class="figure__caption"><strong>Concept Visualization</strong> — 函館を日本の避暑首都として再定義する</p>
+      </div>
+      <h3>施策⑤ Summer Capital — 避暑都市宣言</h3>
+      <p class="body-text mt-8">
+        <strong>解決する課題：</strong>気温差13℃の構造的優位が都市戦略として未活用<br>
+        <strong>変えること：</strong>「日本の避暑首都」を都市ビジョンとして宣言。夏季イベント集約、ワーケーション拠点整備、長期滞在パッケージで新市場を開拓<br>
+        <strong>波及効果：</strong>消費+30億円。長期滞在客の獲得。他4施策の上位概念として機能<br>
+        <strong>上位戦略：</strong>避暑都市ブランディング（他4施策を統合する都市ビジョン）
+      </p>
+      <p class="body-text mt-8"><a href="../summer-capital/" class="strategy-link">Summer Capital 詳細ページへ →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter 6: 施策同士の関係 -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 06 — Interconnection</p>
+    <h2 class="section-title">施策同士の関係</h2>
+    <p class="body-text mt-16">
+      5つの施策はバラバラのアイデア集ではない。<br>
+      相互に連動し、一つの都市戦略として機能する。
+    </p>
+
+    <div class="analysis-block mt-32">
+      <h3>上位構造：Summer Capital が全体を束ねる</h3>
+      <p class="body-text mt-8">
+        Summer Capital（避暑都市宣言）は、個別施策ではなく都市ビジョンである。<br>
+        他の4施策に「函館は避暑都市である」という一貫した方向性を与え、
+        個別の改善を都市ブランドへ統合する上位概念として機能する。
+      </p>
+    </div>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>Night Economy × Goryokaku 2.0</h3>
+        <p class="body-text">
+          五稜郭の夜間営業延長（22時）は、
+          Night Economyの夜間消費導線と直結する。<br>
+          五稜郭ライトアップが夜の人流を生み、
+          周辺飲食の夜間売上を押し上げる。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>Goryokaku 2.0 × Jomon Experience</h3>
+        <p class="body-text">
+          五稜郭の歴史体験と縄文の世界遺産体験は、
+          「体験型都市化」の両輪として機能する。<br>
+          函館を「歴史を体験する都市」として再定義する。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>Experience Liner × 全施策</h3>
+        <p class="body-text">
+          Experience Linerは到着体験の入口である。<br>
+          18分の体験が函館ブランドの第一印象を決め、
+          到着後の滞在・消費・回遊への期待値を設計する。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>Night Economy × Summer Capital</h3>
+        <p class="body-text">
+          涼しい夏の夜は、夜間消費の最適環境である。<br>
+          避暑都市の気候優位が夜経済の価値を最大化し、
+          夜経済が避暑都市の滞在体験を豊かにする。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">連動の意味</div>
+      <p class="insight-box__text">
+        5つの施策を個別に足し合わせると+125億円。<br>
+        しかし施策同士がつながることで生まれる波及効果を加えると+150億円になります。<br>
+        この差の+25億円が、「バラバラの取り組み」と「一つの都市戦略」の違いです。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter 7: Before / After -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 07 — Before / After</p>
+    <h2 class="section-title">戦略が変えるもの</h2>
+    <p class="body-text mt-16">
+      この戦略が実行された場合、函館観光の構造はどう変わるか。<br>
+      主要指標のBefore / Afterを整理する。
+    </p>
+
+    <div class="analysis-block mt-32">
+      <h3>滞在構造</h3>
+      <div class="compare-block mt-16">
+        <div class="compare-item">
+          <div class="stat-number en" style="color:var(--gray-400)">2</div>
+          <div class="stat-unit">泊</div>
+          <div class="stat-label">現在の主力滞在</div>
+        </div>
+        <div class="compare-arrow">&rarr;</div>
+        <div class="compare-item">
+          <div class="stat-number en">3</div>
+          <div class="stat-unit">泊</div>
+          <div class="stat-label">3泊目に進む理由がある</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis-block mt-32">
+      <h3>五稜郭</h3>
+      <div class="compare-block mt-16">
+        <div class="compare-item">
+          <div class="stat-number en" style="color:var(--gray-400)">60</div>
+          <div class="stat-unit">分</div>
+          <div class="stat-label">見て終わり</div>
+        </div>
+        <div class="compare-arrow">&rarr;</div>
+        <div class="compare-item">
+          <div class="stat-number en">3-4</div>
+          <div class="stat-unit">時間</div>
+          <div class="stat-label">体験・飲食・夜間で滞在拠点化</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis-block mt-32">
+      <h3>夜の過ごし方</h3>
+      <div class="compare-block mt-16">
+        <div class="compare-item">
+          <div class="stat-number en" style="color:var(--gray-400)">20</div>
+          <div class="stat-unit">時</div>
+          <div class="stat-label">夜景の後はホテルへ帰る</div>
+        </div>
+        <div class="compare-arrow">&rarr;</div>
+        <div class="compare-item">
+          <div class="stat-number en">23</div>
+          <div class="stat-unit">時</div>
+          <div class="stat-label">夜景の後にもう一つの夜がある</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis-block mt-32">
+      <h3>体験消費</h3>
+      <div class="compare-block mt-16">
+        <div class="compare-item">
+          <div class="stat-number en" style="color:var(--gray-400)">5</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">見る観光、買い物中心</div>
+        </div>
+        <div class="compare-arrow">&rarr;</div>
+        <div class="compare-item">
+          <div class="stat-number en">15</div>
+          <div class="stat-unit">%</div>
+          <div class="stat-label">体験にお金を払う構造</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis-block mt-32">
+      <h3>到着体験</h3>
+      <div class="compare-block mt-16">
+        <div class="compare-item">
+          <div class="stat-number en" style="color:var(--gray-400)">18</div>
+          <div class="stat-unit">分</div>
+          <div class="stat-label">ただの移動時間</div>
+        </div>
+        <div class="compare-arrow">&rarr;</div>
+        <div class="compare-item">
+          <div class="stat-number en">18</div>
+          <div class="stat-unit">分</div>
+          <div class="stat-label">函館体験の序章</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter 8: 成長シナリオ -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 08 — Growth Scenario</p>
+    <h2 class="section-title">成長シナリオ</h2>
+    <p class="body-text mt-16">
+      5つの施策が連動して稼働した場合、
+      函館観光の経済規模は現状から+150億円の成長が見込まれる。<br>
+      その内訳と根拠は<a href="../impact/" class="strategy-link">経済効果ページ</a>で詳述している。
+    </p>
+
+    <div class="flow-diagram mt-32">
+      <div class="flow-step">構造課題の解消</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">滞在延長・消費増</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step flow-step--accent">+150億円</div>
+    </div>
+    <p class="caption text-center mt-16">構造課題の解消 → 行動変容 → 経済効果の因果</p>
+
+    <div class="grid-3 mt-40">
+      <div class="kpi-card">
+        <div class="stat-number en">+38<span class="stat-unit">億</span></div>
+        <div class="stat-label">Night Economy</div>
+      </div>
+      <div class="kpi-card">
+        <div class="stat-number en">+27<span class="stat-unit">億</span></div>
+        <div class="stat-label">Goryokaku 2.0</div>
+      </div>
+      <div class="kpi-card">
+        <div class="stat-number en">+30<span class="stat-unit">億</span></div>
+        <div class="stat-label">Summer Capital</div>
+      </div>
+      <div class="kpi-card">
+        <div class="stat-number en">+18<span class="stat-unit">億</span></div>
+        <div class="stat-label">Jomon Experience</div>
+      </div>
+      <div class="kpi-card">
+        <div class="stat-number en">+12<span class="stat-unit">億</span></div>
+        <div class="stat-label">Experience Liner</div>
+      </div>
+      <div class="kpi-card">
+        <div class="stat-number en">+25<span class="stat-unit">億</span></div>
+        <div class="stat-label">施策間の波及効果</div>
+      </div>
+    </div>
+
+    <p class="body-text mt-32">
+      これらの数値は精緻な予測ではなく、
+      公開データに基づくモデルケースとしての試算である。<br>
+      重要なのは個々の数字の精度ではなく、
+      構造を変えれば成長余地があるという方向性そのものである。
+    </p>
+  </div>
+</section>
+
+<!-- Chapter 9: 実行条件 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Chapter 09 — Execution</p>
+    <h2 class="section-title">戦略を実行に移すために</h2>
+    <p class="body-text mt-16">
+      戦略は、実行されなければ意味がない。<br>
+      この戦略を機能させるために必要な実行条件を整理する。
+    </p>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>段階実装</h3>
+        <p class="body-text">
+          すべてを一度に実行する必要はない。<br>
+          短期（1〜2年）で実証事業を開始し、
+          中期（3〜5年）で本格稼働、
+          長期（5〜10年）で都市ブランド確立。<br>
+          詳細は<a href="../roadmap/" class="strategy-link">実行ロードマップ</a>で示す。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>官民連携</h3>
+        <p class="body-text">
+          行政単独でも民間単独でも実現しない。<br>
+          行政は制度設計と公共空間の活用を、
+          民間は事業運営と投資を担う。
+          官民が役割分担した上で、一つの方向に向かう必要がある。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>小さく始める</h3>
+        <p class="body-text">
+          Night Economyの社会実験、Experience Linerの臨時運行など、
+          低リスクで効果を検証できる施策から着手する。<br>
+          成果が確認できた施策から段階的に拡大する。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>市民との共有</h3>
+        <p class="body-text">
+          観光戦略は市民生活と不可分である。<br>
+          「観光客のための施策」ではなく
+          「市民の暮らしも豊かにする都市設計」として、
+          方向性を共有することが実行の基盤になる。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">この戦略が目指すもの</div>
+      <p class="insight-box__text">
+        函館を「一度行けば十分な都市」から「何度でも泊まりたくなる都市」へ。<br>
+        そのために必要なのは、新しい名所を一つつくることではなく、
+        いまある魅力を「もっと長く、もっと深く」楽しめる仕組みとして束ねることです。<br>
+        函館には、そのための資源がすでに揃っています。
+      </p>
+    </div>
+
+    <div class="grid-2 mt-40">
+      <a href="../night-economy/" class="next-page">
+        <div>
+          <div class="next-page__label">Next: 施策詳細</div>
+          <div class="next-page__title">Night Economy →</div>
+        </div>
+        <div class="next-page__arrow">&rarr;</div>
+      </a>
+      <a href="../impact/" class="next-page">
+        <div>
+          <div class="next-page__label">経済効果</div>
+          <div class="next-page__title">+150億円の根拠 →</div>
+        </div>
+        <div class="next-page__arrow">&rarr;</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p style="font-size:12px;color:var(--gray-400);margin-bottom:6px;">お問い合わせ：<a href="mailto:futoshitatoki@me.com" style="color:var(--gray-400);">futoshitatoki@me.com</a></p>
+      <p>&copy; 2026 Hakodate Tourism Strategy — 函館市民提言</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>函館観光の構造分析 — HAKODATE TOURISM STRATEGY</title>
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-upper">
+    <div class="header-inner">
+      <a href="../" class="header-logo">
+        <span class="header-logo__main en">HAKODATE 2035</span>
+        <span class="header-logo__sub en">Tourism Strategy</span>
+      </a>
+      <nav class="header-nav">
+        <a href="../">全体像</a>
+        <a href="../summary/">サマリー</a>
+        <a href="../why-hakodate/">なぜ函館</a>
+        <a href="../analysis/" class="is-active">データ分析</a>
+        <a href="../strategy/">全体戦略</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown__toggle">主要施策</button>
+          <div class="nav-dropdown__menu">
+            <a href="../night-economy/">Night Economy</a>
+            <a href="../goryokaku-2/">Goryokaku 2.0</a>
+            <a href="../jomon/">Jomon Experience</a>
+            <a href="../experience-liner/">Experience Liner</a>
+            <a href="../summer-capital/">Summer Capital</a>
+          </div>
+        </div>
+        <a href="../impact/">経済効果</a>
+        <a href="../roadmap/">実行計画</a>
+        <a href="../first-step/">最初の一歩</a>
+        <a href="../proposal/">提案について</a>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="header-lower">
+    <div class="header-lower__inner">
+      <a href="#market">観光市場</a>
+      <a href="#profile">観光客属性</a>
+      <a href="#stay">滞在構造</a>
+      <a href="#visit">回遊構造</a>
+      <a href="#spending">消費構造</a>
+      <a href="#satisfaction">不満と再訪</a>
+      <a href="#conclusion">導かれる戦略</a>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu__section">
+    <div class="mobile-menu__label">Navigation</div>
+    <a href="../">全体像</a>
+    <a href="../summary/">サマリー</a>
+    <a href="../why-hakodate/">なぜ函館</a>
+    <a href="../analysis/" class="is-active">データ分析</a>
+    <a href="../strategy/">全体戦略</a>
+    <button class="mobile-accordion__toggle">主要施策</button>
+    <div class="mobile-accordion__body">
+      <a href="../night-economy/">Night Economy</a>
+      <a href="../goryokaku-2/">Goryokaku 2.0</a>
+      <a href="../jomon/">Jomon Experience</a>
+      <a href="../experience-liner/">Experience Liner</a>
+      <a href="../summer-capital/">Summer Capital</a>
+    </div>
+    <a href="../impact/">経済効果</a>
+    <a href="../roadmap/">実行計画</a>
+    <a href="../first-step/">最初の一歩</a>
+    <a href="../proposal/">提案について</a>
+  </div>
+  <div class="mobile-menu__section">
+    <div class="mobile-menu__label">このページ内</div>
+    <a href="#market">観光市場</a>
+    <a href="#profile">観光客属性</a>
+    <a href="#stay">滞在構造</a>
+    <a href="#visit">回遊構造</a>
+    <a href="#spending">消費構造</a>
+    <a href="#satisfaction">不満と再訪</a>
+    <a href="#conclusion">導かれる戦略</a>
+  </div>
+</div>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-hero__label en">Analysis</p>
+    <h1 class="page-hero__title">函館観光の構造分析</h1>
+    <p class="page-hero__subtitle">
+      函館市観光動向調査のデータをもとに、<br>
+      観光客の行動・消費・満足・不満を読み解き、<br>
+      函館観光の伸びしろと次の一手を整理しました。
+    </p>
+    <p class="caption mt-16">出典：函館市観光動向調査（函館市経済部観光課）</p>
+  </div>
+</section>
+
+<!-- 1. この分析ページの見方 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">How to Read</p>
+    <h2 class="section-title">この分析ページの見方</h2>
+    <p class="body-text mt-16">
+      このページは、ただの統計集ではありません。<br>
+      「函館観光のどこに伸びしろがあるか」を読み解くためのページです。
+    </p>
+    <p class="body-text mt-16">
+      函館は、すでに高い満足度と再訪意向を持つ街です。
+      したがって本分析の目的は、
+      「魅力が足りない理由」を探すことではありません。<br>
+      すでにある魅力を、
+      どのように滞在・消費・再訪へつなげるかを整理することです。
+    </p>
+    <p class="body-text mt-16">
+      各章は
+      「データ → 読み取れること → 戦略示唆 → 関連施策」
+      の順で構成している。
+    </p>
+  </div>
+</section>
+
+<!-- 2. 観光市場の基本構造 -->
+<section id="market" class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">01 — Market Overview</p>
+    <h2 class="section-title">観光市場の基本構造</h2>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>国内観光客</h3>
+        <div class="metric-row mt-16">
+          <div class="metric-row__item">
+            <div class="metric-row__value en">92.7%</div>
+            <div class="metric-row__label">満足度</div>
+          </div>
+          <div class="metric-row__item">
+            <div class="metric-row__value en">94.4%</div>
+            <div class="metric-row__label">再訪意向</div>
+          </div>
+        </div>
+        <p class="body-text mt-16">
+          平均消費額 <strong>45,920円</strong>。<br>
+          満足度・再訪意向ともに極めて高い。
+          しかし消費額は全国平均約60,000円を下回る。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>外国人観光客</h3>
+        <div class="metric-row mt-16">
+          <div class="metric-row__item">
+            <div class="metric-row__value en">94.1%</div>
+            <div class="metric-row__label">満足度</div>
+          </div>
+          <div class="metric-row__item">
+            <div class="metric-row__value en">95.2%</div>
+            <div class="metric-row__label">再訪意向</div>
+          </div>
+        </div>
+        <p class="body-text mt-16">
+          平均消費額 <strong>52,800円</strong>。<br>
+          国内客より高単価。
+          しかし夜間・体験消費の不足は共通している。
+        </p>
+      </div>
+    </div>
+
+    <div class="data-point mt-32">
+      <div class="data-point__label en">読み取り</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          函館は「不人気な都市」ではない。
+          国内・外国人ともに満足度90%超、再訪意向94%超。
+          すでに評価は高い。<br>
+          課題は集客不足ではなく、
+          高い評価を消費につなげる仕組みが、まだ整っていないところにあります。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-24">
+      <div class="insight-box__label en">戦略示唆</div>
+      <p class="insight-box__text">
+        函館は、満足度も再訪意向も高い。
+        したがって課題は、魅力不足ではない。<br>
+        高い評価を、もう少し長い滞在と消費へつなげる仕組みが足りていません。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 観光客の属性 -->
+<section id="profile" class="section">
+  <div class="container fade-in">
+    <p class="section-label en">02 — Visitor Profile</p>
+    <h2 class="section-title">観光客の属性</h2>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>国内観光客の属性</h3>
+        <p class="body-text mt-8">
+          居住地は<strong>首都圏</strong>が最多、次いで<strong>道内</strong>。
+          性別は<strong>女性がやや優位</strong>。
+          年代は<strong>50〜60代</strong>が主力。<br>
+          同伴形態は恋人・夫婦、家族旅行が中心。
+        </p>
+        <div class="data-point mt-16">
+          <div class="data-point__label en">読み取り</div>
+          <div class="data-point__content">
+            <p class="data-point__text">
+              首都圏からの新規客と、道内リピーターの二層構造。<br>
+              女性比率の高さは、
+              食・景観・街歩きへの感度が高い客層だということです。
+              主力が中高年であることは、
+              上質さや落ち着きを求める消費傾向と重なります。
+            </p>
+          </div>
+        </div>
+        <div class="insight-box mt-16">
+          <div class="insight-box__label en">戦略示唆</div>
+          <p class="insight-box__text">
+            首都圏向けの新規訴求と、道内リピーター向けの再訪訴求は分けて設計する必要があります。
+            女性基準の都市体験設計が有効。
+          </p>
+        </div>
+      </div>
+      <div class="analysis-block">
+        <h3>外国人観光客の属性</h3>
+        <p class="body-text mt-8">
+          居住国は<strong>台湾</strong>が突出、次いで中華圏。
+          年代は国内客より<strong>若い</strong>（30〜40代中心）。<br>
+          日本訪問は複数回の上級者が多いが、
+          函館は<strong>初訪問</strong>が主力。
+        </p>
+        <div class="data-point mt-16">
+          <div class="data-point__label en">読み取り</div>
+          <div class="data-point__content">
+            <p class="data-point__text">
+              台湾・中華圏が主戦場。
+              「日本には何度も来ているが、函館は初めて」という層が多い。<br>
+              つまり函館は、日本上級者の新規開拓先として選ばれている。
+              この層は消費意欲が高く、体験型コンテンツとの相性が良い。
+            </p>
+          </div>
+        </div>
+        <div class="insight-box mt-16">
+          <div class="insight-box__label en">戦略示唆</div>
+          <p class="insight-box__text">
+            台湾・中華圏の日本上級者に向けた、
+            体験型・食文化型の訴求が有効。
+            言語対応と夜間コンテンツの整備が急務。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 滞在日数と旅行構造 -->
+<section id="stay" class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">03 — Stay Structure</p>
+    <h2 class="section-title">滞在日数と旅行構造</h2>
+
+    <div class="data-point mt-16">
+      <div class="data-point__label en">DATA</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          国内観光客の旅行全体日数は「3日」が最多で<strong>40.7%</strong>。
+          函館での宿泊数は「2泊」が最多で<strong>41.7%</strong>。
+        </p>
+      </div>
+    </div>
+
+    <div class="bar-chart mt-16">
+      <div class="bar-row">
+        <span class="bar-label">旅行全体3日</span>
+        <div class="bar-track"><div class="bar-fill" style="width:40.7%"><span class="bar-value en">40.7%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">函館2泊</span>
+        <div class="bar-track"><div class="bar-fill" style="width:41.7%"><span class="bar-value en">41.7%</span></div></div>
+      </div>
+    </div>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>国内観光客</h3>
+        <p class="body-text">
+          函館はもう「1泊都市」ではありません。
+          2泊が主流です。<br>
+          したがって問題は宿泊日数の不足ではなく、
+          <strong>2泊目の夜と3日目の午前に、何をしてもらうか</strong>です。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>外国人観光客</h3>
+        <p class="body-text">
+          外国人も函館で2泊以上する層が多い。
+          しかし夜の過ごし方が限定的で、
+          「20時以降に楽しめる場所がない」という不満が顕在化している。
+        </p>
+      </div>
+    </div>
+
+    <div class="data-point mt-24">
+      <div class="data-point__label en">読み取り</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          2泊が定着しているということは、
+          1泊目の夜は夜景+夕食で消費される。
+          しかし2泊目の夜は「行く場所がない」まま終わる。<br>
+          この2泊目夜の消費空白が、
+          函館の消費単価を押し下げている最大の要因です。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-24">
+      <div class="insight-box__label en">戦略示唆</div>
+      <p class="insight-box__text">
+        泊数の延長よりも、2泊目夜の消費機会の創出が最優先課題。<br>
+        3日目午前の体験メニュー設計も、滞在価値を高める鍵になる。
+      </p>
+    </div>
+    <div class="mt-16">
+      <a href="../night-economy/" class="strategy-link">Night Economy →</a>
+      <a href="../goryokaku-2/" class="strategy-link" style="margin-left:16px;">Goryokaku 2.0 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 訪問行動と回遊構造 -->
+<section id="visit" class="section">
+  <div class="container fade-in">
+    <p class="section-label en">04 — Visit Patterns</p>
+    <h2 class="section-title">訪問行動と回遊構造</h2>
+
+    <div class="data-point mt-16">
+      <div class="data-point__label en">DATA</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          訪問先上位：五稜郭<strong>74.3%</strong>、朝市<strong>65.7%</strong>、
+          ウォーターフロント<strong>64.0%</strong>、函館山<strong>60.7%</strong>。
+        </p>
+      </div>
+    </div>
+
+    <div class="bar-chart mt-16">
+      <div class="bar-row">
+        <span class="bar-label">五稜郭</span>
+        <div class="bar-track"><div class="bar-fill" style="width:74.3%"><span class="bar-value en">74.3%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">朝市</span>
+        <div class="bar-track"><div class="bar-fill" style="width:65.7%"><span class="bar-value en">65.7%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">ウォーターフロント</span>
+        <div class="bar-track"><div class="bar-fill" style="width:64.0%"><span class="bar-value en">64.0%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">函館山</span>
+        <div class="bar-track"><div class="bar-fill" style="width:60.7%"><span class="bar-value en">60.7%</span></div></div>
+      </div>
+    </div>
+
+    <div class="data-point mt-24">
+      <div class="data-point__label en">読み取り</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          上位4拠点に訪問が集中し、各拠点の滞在は60〜90分。
+          半日〜1日で主要拠点を回り切れてしまう構造が、
+          「もう1日いたい」と思えない原因になっています。
+        </p>
+        <p class="data-point__text mt-16">
+          五稜郭は最多訪問先でありながら、
+          タワー展望のみの短時間滞在にとどまっている。
+          74.3%もの観光客が訪れる場所を、
+          60分の展望で終わらせている現状は、大きな機会損失です。
+        </p>
+        <p class="data-point__text mt-16">
+          函館山夜景の後、観光客の行動が分散・消失する傾向も顕著。
+          「夜景で終わる観光」が、回遊性を断ち切っている。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-24">
+      <div class="insight-box__label en">戦略示唆</div>
+      <p class="insight-box__text">
+        函館観光は、上位拠点への集中度が高い。
+        つまり新しいお客さんを増やさなくても、
+        いま来ている人の滞在を少し延ばすだけで、消費は増やせます。
+      </p>
+      <p class="insight-box__text mt-16">
+        五稜郭は単なる人気スポットではなく、
+        「滞在拠点へ育てるべき場所」です。
+      </p>
+    </div>
+    <div class="mt-16">
+      <a href="../goryokaku-2/" class="strategy-link">Goryokaku 2.0 →</a>
+      <a href="../night-economy/" class="strategy-link" style="margin-left:16px;">Night Economy →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 消費構造 -->
+<section id="spending" class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">05 — Spending Structure</p>
+    <h2 class="section-title">消費構造</h2>
+
+    <div class="data-point mt-16">
+      <div class="data-point__label en">DATA</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          国内観光客の平均消費額<strong>45,920円</strong>。
+          外国人観光客の平均消費額<strong>52,800円</strong>。<br>
+          消費内訳は宿泊・飲食・土産が大半を占め、体験にかけるお金はほとんどありません。
+        </p>
+      </div>
+    </div>
+
+    <div class="figure mt-24">
+      <p class="body-text mb-16" style="font-weight:600;">消費構造の内訳（概算）</p>
+      <div class="stacked-bar">
+        <div class="stacked-bar__segment" style="width:40%;background:var(--navy-600)">宿泊40%</div>
+        <div class="stacked-bar__segment" style="width:30%;background:var(--navy-400)">飲食30%</div>
+        <div class="stacked-bar__segment" style="width:25%;background:var(--navy-300)">土産25%</div>
+        <div class="stacked-bar__segment" style="width:5%;background:var(--gray-300)">体験5%</div>
+      </div>
+      <p class="figure__caption"><strong>CHART</strong> — 函館観光の支出は宿泊・飲食・土産に偏在。体験消費の薄さが、消費単価の伸び悩みを生んでいる。</p>
+    </div>
+
+    <div class="figure mt-24">
+      <p class="body-text mb-16" style="font-weight:600;">国内主要観光都市との消費額比較（概算）</p>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <span class="bar-label">沖縄</span>
+          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--navy-600)"><span class="bar-value en">90,000円</span></div></div>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">東京</span>
+          <div class="bar-track"><div class="bar-fill" style="width:72%;background:var(--navy-600)"><span class="bar-value en">65,000円</span></div></div>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">京都</span>
+          <div class="bar-track"><div class="bar-fill" style="width:61%;background:var(--navy-400)"><span class="bar-value en">55,000円</span></div></div>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">外国人@函館</span>
+          <div class="bar-track"><div class="bar-fill" style="width:59%;background:var(--navy-400)"><span class="bar-value en">52,800円</span></div></div>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">札幌</span>
+          <div class="bar-track"><div class="bar-fill" style="width:56%;background:var(--navy-400)"><span class="bar-value en">50,000円</span></div></div>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">国内客@函館</span>
+          <div class="bar-track"><div class="bar-fill" style="width:51%;background:var(--red)"><span class="bar-value en">45,920円</span></div></div>
+        </div>
+      </div>
+      <p class="figure__caption"><strong>CHART</strong> — 函館の消費額は主要都市で中位〜やや低位。満足度の高さに対して消費単価が追いついていない。</p>
+    </div>
+
+    <div class="data-point mt-24">
+      <div class="data-point__label en">読み取り</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          函館の消費は食・土産・宿泊に強い一方、
+          体験・夜間・追加回遊に伸びしろがある。<br>
+          京都では文化体験、沖縄ではマリンアクティビティ、
+          東京では買物・夜間消費が単価を押し上げている。
+        </p>
+        <p class="data-point__text mt-16">
+          函館は、見学・食事・買物で観光が完結しやすく、
+          追加料金を払って参加したくなる体験装置が少ない。<br>
+          「魅力がないからお金が落ちない」のではなく、
+          「お金を使いたくなる体験と、その時間帯が足りていない」。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-24">
+      <div class="insight-box__label en">戦略示唆</div>
+      <p class="insight-box__text">
+        函館観光の課題は観光客数ではなく消費単価である。<br>
+        必要なのは新たな集客よりも、
+        既に来ている観光客がもう一回体験し、もう一か所回り、
+        もう少しお金を使いたくなる導線をつくることです。
+      </p>
+    </div>
+    <div class="mt-16">
+      <a href="../jomon/" class="strategy-link">Jomon Experience →</a>
+      <a href="../night-economy/" class="strategy-link" style="margin-left:16px;">Night Economy →</a>
+      <a href="../impact/" class="strategy-link" style="margin-left:16px;">経済効果 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. 情報取得・市内移動・旅行中UX -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">06 — Travel UX</p>
+    <h2 class="section-title">情報取得・市内移動・旅行中UX</h2>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>旅行前の情報源</h3>
+        <p class="body-text">
+          旅行前情報は<strong>Webサイト・SNS</strong>が中心。
+          公式観光サイトの利用も一定あるが、
+          実際の行動決定はSNSとクチコミに依存する傾向が強い。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>旅行中の情報源</h3>
+        <p class="body-text">
+          旅行中の観光OSは、実質的に<strong>Googleマップ</strong>。<br>
+          「次にどこへ行くか」はGoogleマップの検索とルート案内で決まる。
+          公式サイトやパンフレットの影響力は限定的。
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>国内客の市内移動</h3>
+        <p class="body-text">
+          市電、徒歩、レンタカーが中心。
+          函館駅〜元町〜函館山の動線は整備されているが、
+          五稜郭方面への回遊導線が弱い。<br>
+          新函館北斗駅からの接続は
+          「単なる乗り換え」として消費されている。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>外国人の市内移動</h3>
+        <p class="body-text">
+          市電と徒歩中心。バス路線の理解が難しく、
+          結果としてGoogleマップのルート案内に依存する。<br>
+          多言語サインや案内アプリの整備状況が、
+          行動範囲に直接影響している。
+        </p>
+      </div>
+    </div>
+
+    <div class="data-point mt-24">
+      <div class="data-point__label en">読み取り</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          旅行中の観光導線は、Webサイトではなく
+          Googleマップとスマートフォンで決まる。<br>
+          したがって観光戦略は、
+          紙媒体やWebサイトだけでなく、
+          観光導線まで含めて設計し直す必要があります。
+        </p>
+        <p class="data-point__text mt-16">
+          新函館北斗〜函館市街の導線は、
+          交通問題ではなく「観光の入口」の設計問題として捉え直すべきです。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-24">
+      <div class="insight-box__label en">戦略示唆</div>
+      <p class="insight-box__text">
+        観光導線はWebサイトだけでなく、
+        Googleマップ、検索結果、移動導線まで含めて一体的に設計する必要がある。<br>
+        新函館北斗〜市街地の導線は、
+        交通ではなく「観光の入口」として再設計すべきである。
+      </p>
+    </div>
+    <div class="mt-16">
+      <a href="../experience-liner/" class="strategy-link">Experience Liner →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. 満足度・不満・再訪意向 -->
+<section id="satisfaction" class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">07 — Satisfaction & Pain Points</p>
+    <h2 class="section-title">満足度・不満・再訪意向</h2>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>国内観光客</h3>
+        <div class="metric-row mt-16">
+          <div class="metric-row__item">
+            <div class="metric-row__value en">92.7%</div>
+            <div class="metric-row__label">満足度</div>
+          </div>
+          <div class="metric-row__item">
+            <div class="metric-row__value en">94.4%</div>
+            <div class="metric-row__label">再訪意向</div>
+          </div>
+        </div>
+        <p class="body-text mt-16">
+          「がっかり要素」として挙がるのは
+          夜の選択肢不足、体験の少なさ、末端の品質。<br>
+          いずれも個別店舗の問題ではなく、
+          街の仕組みの問題です。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>外国人観光客</h3>
+        <div class="metric-row mt-16">
+          <div class="metric-row__item">
+            <div class="metric-row__value en">94.1%</div>
+            <div class="metric-row__label">満足度</div>
+          </div>
+          <div class="metric-row__item">
+            <div class="metric-row__value en">95.2%</div>
+            <div class="metric-row__label">再訪意向</div>
+          </div>
+        </div>
+        <p class="body-text mt-16">
+          困りごと上位：
+          <strong>言語対応 22.8%</strong>、
+          <strong>20時以降の営業 19.0%</strong>。<br>
+          外国人の5人に1人が「夜に行ける場所がない」と回答。
+        </p>
+      </div>
+    </div>
+
+    <div class="bar-chart mt-32">
+      <div class="bar-row">
+        <span class="bar-label">言語対応</span>
+        <div class="bar-track"><div class="bar-fill" style="width:22.8%;background:var(--red)"><span class="bar-value en">22.8%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">20時以降の営業</span>
+        <div class="bar-track"><div class="bar-fill" style="width:19.0%;background:var(--red)"><span class="bar-value en">19.0%</span></div></div>
+      </div>
+    </div>
+    <p class="caption">外国人観光客の困りごと上位（函館市観光動向調査）</p>
+
+    <div class="data-point mt-24">
+      <div class="data-point__label en">読み取り</div>
+      <div class="data-point__content">
+        <p class="data-point__text">
+          函館は評価が高い。
+          だからこそ、次の成長は
+          「来てもらうこと」より
+          「より深く楽しんでもらうこと」にある。
+        </p>
+        <p class="data-point__text mt-16">
+          不満の上位は都市設計で改善できるものが多い。
+          夜、言語、交通、末端品質。<br>
+          これらの改善は、そのまま消費増と再訪率向上につながる。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-24">
+      <div class="insight-box__label en">戦略示唆</div>
+      <p class="insight-box__text">
+        満足度が高いのに消費が伸びない。
+        これは「魅力の問題」ではなく「仕組みの問題」です。<br>
+        夜間経済・多言語対応・交通導線の改善は、
+        個別施策ではなく都市の基盤として、まとめて設計する必要があります。
+      </p>
+    </div>
+    <div class="mt-16">
+      <a href="../night-economy/" class="strategy-link">Night Economy →</a>
+      <a href="../experience-liner/" class="strategy-link" style="margin-left:16px;">Experience Liner →</a>
+      <a href="../impact/" class="strategy-link" style="margin-left:16px;">経済効果 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 9. データから導かれる戦略 -->
+<section id="conclusion" class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Conclusion</p>
+    <h2 class="section-title">データから導かれる戦略</h2>
+
+    <p class="body-text mt-16">
+      函館市観光動向調査のデータは、すべて同じ方向を指しています。
+    </p>
+    <p class="body-text mt-16" style="font-size:17px;font-weight:700;color:var(--navy-800);">
+      函館観光の課題は「集客」ではない。<br>
+      満足度92.7%・再訪意向94.4%が示すとおり、函館の魅力は十分に評価されている。<br>
+      課題は「来た人がもっと長く滞在し、もっとお金を使いたくなる仕組み」がまだないことです。
+    </p>
+
+    <div class="grid-2 mt-40">
+      <div class="analysis-block">
+        <h3>Night Economy</h3>
+        <p class="body-text">
+          2泊が主力であること、
+          20時以降の不満があること、
+          夜景後の二次消費が弱いことから導かれる戦略。<br>
+          夜間消費の「空白」を埋め、
+          2泊目の夜に消費機会をつくる。
+        </p>
+        <a href="../night-economy/" class="strategy-link mt-16">Night Economy →</a>
+      </div>
+      <div class="analysis-block">
+        <h3>Goryokaku 2.0</h3>
+        <p class="body-text">
+          74.3%が訪問するのに滞在60分で終わっている、
+          という最大の機会損失から導かれる戦略。<br>
+          展望の場を、3〜4時間滞在する第2拠点へ進化させる。
+        </p>
+        <a href="../goryokaku-2/" class="strategy-link mt-16">Goryokaku 2.0 →</a>
+      </div>
+      <div class="analysis-block">
+        <h3>Jomon Experience</h3>
+        <p class="body-text">
+          消費が飲食・土産に偏り、
+          体験費が5%以下であることから導かれる戦略。<br>
+          体験不参加率71.6%を、
+          高付加価値の体験消費へ転換する。
+        </p>
+        <a href="../jomon/" class="strategy-link mt-16">Jomon Experience →</a>
+      </div>
+      <div class="analysis-block">
+        <h3>Experience Liner</h3>
+        <p class="body-text">
+          新幹線・JR導線が強い一方、
+          新函館北斗〜函館の18分が
+          「空白の移動時間」になっていることから導かれる戦略。<br>
+          到着前から体験を始める電車をつくる。
+        </p>
+        <a href="../experience-liner/" class="strategy-link mt-16">Experience Liner →</a>
+      </div>
+      <div class="analysis-block">
+        <h3>Summer Capital</h3>
+        <p class="body-text">
+          夏季22℃という突出した気候優位と、
+          長期滞在の余地から導かれる戦略。<br>
+          避暑都市ブランドで夏の滞在需要を創出する。
+        </p>
+        <a href="../summer-capital/" class="strategy-link mt-16">Summer Capital →</a>
+      </div>
+    </div>
+
+    <div class="insight-box mt-40">
+      <div class="insight-box__label en">結論</div>
+      <p class="insight-box__text">
+        函館は魅力不足の都市ではない。
+        消費機会を取りこぼしている街です。
+      </p>
+      <p class="insight-box__text mt-16">
+        夜間消費の空白、訪問先の集中、体験コンテンツの不在、
+        導線設計の未整備、気候優位の未活用。<br>
+        これらはいずれも個別の施設や事業者の問題ではなく、
+        街全体の観光の仕組みの問題です。
+      </p>
+      <p class="insight-box__text mt-16">
+        この構造課題に対する都市戦略として、5つの主要プロジェクトを提案する。
+      </p>
+    </div>
+
+    <a href="../strategy/" class="next-page mt-40">
+      <div>
+        <div class="next-page__label">Next</div>
+        <div class="next-page__title">全体戦略 →</div>
+      </div>
+      <div class="next-page__arrow">&rarr;</div>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p style="font-size:12px;color:var(--gray-400);margin-bottom:6px;">お問い合わせ：<a href="mailto:futoshitatoki@me.com" style="color:var(--gray-400);">futoshitatoki@me.com</a></p>
+      <p>&copy; 2026 Hakodate Tourism Strategy — 函館市民提言</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

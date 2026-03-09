@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" font-family="'Inter','Noto Sans JP',-apple-system,sans-serif">
+  <rect width="720" height="440" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="60" y="40" font-size="18" font-weight="800" fill="#1a2a3a" letter-spacing="-0.3">世界の避暑都市と函館</text>
+  <text x="60" y="64" font-size="13" fill="#777" font-weight="500">夏の平均気温比較</text>
+
+  <!-- Grid lines -->
+  <line x1="140" y1="110" x2="660" y2="110" stroke="#eee" stroke-width="1"/>
+  <line x1="140" y1="175" x2="660" y2="175" stroke="#eee" stroke-width="1"/>
+  <line x1="140" y1="240" x2="660" y2="240" stroke="#eee" stroke-width="1"/>
+
+  <!-- Scale labels -->
+  <text x="670" y="114" font-size="11" fill="#bbb" font-weight="500" text-anchor="start">30℃</text>
+  <text x="670" y="179" font-size="11" fill="#bbb" font-weight="500" text-anchor="start">25℃</text>
+  <text x="670" y="244" font-size="11" fill="#bbb" font-weight="500" text-anchor="start">20℃</text>
+
+  <!-- Bars: scale 0℃=370, 30℃=110 => 1℃ ≈ 8.67px -->
+  <!-- バンクーバー 22℃ => y=370-(22*8.67)=179.3, h=190.7 -->
+  <rect x="50" y="179" width="110" height="191" rx="4" fill="#b8cfe0"/>
+  <text x="105" y="167" font-size="20" font-weight="800" fill="#5a80aa" text-anchor="middle">22<tspan font-size="12" font-weight="500">℃</tspan></text>
+  <text x="105" y="385" font-size="14" font-weight="700" fill="#777" text-anchor="middle">バンクーバー</text>
+  <text x="105" y="403" font-size="11" fill="#bbb" font-weight="500" text-anchor="middle">Canada</text>
+
+  <!-- ポートランド 23℃ => y=370-(23*8.67)=170.6, h=199.4 -->
+  <rect x="200" y="171" width="110" height="199" rx="4" fill="#b8cfe0"/>
+  <text x="255" y="159" font-size="20" font-weight="800" fill="#5a80aa" text-anchor="middle">23<tspan font-size="12" font-weight="500">℃</tspan></text>
+  <text x="255" y="385" font-size="14" font-weight="700" fill="#777" text-anchor="middle">ポートランド</text>
+  <text x="255" y="403" font-size="11" fill="#bbb" font-weight="500" text-anchor="middle">USA</text>
+
+  <!-- 函館 24℃ => y=370-(24*8.67)=162, h=208 -->
+  <rect x="350" y="162" width="110" height="208" rx="4" fill="#2d4a6f"/>
+  <text x="405" y="150" font-size="20" font-weight="800" fill="#2d4a6f" text-anchor="middle">24<tspan font-size="12" font-weight="500" fill="#777">℃</tspan></text>
+  <text x="405" y="385" font-size="14" font-weight="700" fill="#1a2a3a" text-anchor="middle">函館</text>
+  <text x="405" y="403" font-size="11" fill="#bbb" font-weight="500" text-anchor="middle">Japan</text>
+
+  <!-- ニース 24℃ => y=370-(24*8.67)=162, h=208 -->
+  <rect x="500" y="162" width="110" height="208" rx="4" fill="#b8cfe0"/>
+  <text x="555" y="150" font-size="20" font-weight="800" fill="#5a80aa" text-anchor="middle">24<tspan font-size="12" font-weight="500">℃</tspan></text>
+  <text x="555" y="385" font-size="14" font-weight="700" fill="#777" text-anchor="middle">ニース</text>
+  <text x="555" y="403" font-size="11" fill="#bbb" font-weight="500" text-anchor="middle">France</text>
+
+  <!-- Baseline -->
+  <line x1="40" y1="370" x2="650" y2="370" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Bottom note -->
+  <text x="360" y="432" font-size="11" fill="#bbb" font-weight="500" text-anchor="middle">函館は世界の避暑都市と同等の夏季気温帯にある</text>
+</svg>

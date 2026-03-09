@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>実行ロードマップ — HAKODATE TOURISM STRATEGY</title>
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<style>
+/* Roadmap-specific: timeline table */
+.roadmap-table {
+  width: 100%;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 24px 0;
+  font-size: 13px;
+}
+.roadmap-table th,
+.roadmap-table td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-100);
+  border-right: 1px solid var(--gray-100);
+}
+.roadmap-table th {
+  background: var(--navy-800);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+.roadmap-table th:first-child {
+  background: var(--navy-900);
+  text-align: left;
+  min-width: 160px;
+}
+.roadmap-table td:first-child {
+  text-align: left;
+  font-weight: 700;
+  color: var(--navy-800);
+  background: var(--navy-50);
+}
+.roadmap-table tr:last-child td { border-bottom: none; }
+.roadmap-table td:last-child,
+.roadmap-table th:last-child { border-right: none; }
+.rm-cell--active {
+  background: var(--navy-600);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 11px;
+}
+.rm-cell--prep {
+  background: var(--navy-100);
+  color: var(--navy-600);
+  font-size: 11px;
+}
+.rm-cell--expand {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 11px;
+}
+@media (max-width: 768px) {
+  .roadmap-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Priority action cards */
+.priority-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.priority-card__num {
+  font-family: var(--font-en);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--navy-600);
+  line-height: 1;
+  min-width: 36px;
+}
+.priority-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy-800);
+  margin-bottom: 4px;
+}
+.priority-card__desc {
+  font-size: 14px;
+  color: var(--gray-600);
+  line-height: 1.7;
+}
+.priority-card__meta {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--navy-400);
+  letter-spacing: 0.5px;
+  margin-top: 6px;
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-upper">
+    <div class="header-inner">
+      <a href="../" class="header-logo">
+        <span class="header-logo__main en">HAKODATE 2035</span>
+        <span class="header-logo__sub en">Tourism Strategy</span>
+      </a>
+      <nav class="header-nav">
+        <a href="../">全体像</a>
+        <a href="../summary/">サマリー</a>
+        <a href="../why-hakodate/">なぜ函館</a>
+        <a href="../analysis/">データ分析</a>
+        <a href="../strategy/">全体戦略</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown__toggle">主要施策</button>
+          <div class="nav-dropdown__menu">
+            <a href="../night-economy/">Night Economy</a>
+            <a href="../goryokaku-2/">Goryokaku 2.0</a>
+            <a href="../jomon/">Jomon Experience</a>
+            <a href="../experience-liner/">Experience Liner</a>
+            <a href="../summer-capital/">Summer Capital</a>
+          </div>
+        </div>
+        <a href="../impact/">経済効果</a>
+        <a href="../roadmap/" class="is-active">実行計画</a>
+        <a href="../first-step/">最初の一歩</a>
+        <a href="../proposal/">提案について</a>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu__section">
+    <div class="mobile-menu__label">Navigation</div>
+    <a href="../">全体像</a>
+    <a href="../summary/">サマリー</a>
+    <a href="../why-hakodate/">なぜ函館</a>
+    <a href="../analysis/">データ分析</a>
+    <a href="../strategy/">全体戦略</a>
+    <button class="mobile-accordion__toggle">主要施策</button>
+    <div class="mobile-accordion__body">
+      <a href="../night-economy/">Night Economy</a>
+      <a href="../goryokaku-2/">Goryokaku 2.0</a>
+      <a href="../jomon/">Jomon Experience</a>
+      <a href="../experience-liner/">Experience Liner</a>
+      <a href="../summer-capital/">Summer Capital</a>
+    </div>
+    <a href="../impact/">経済効果</a>
+    <a href="../roadmap/" class="is-active">実行計画</a>
+    <a href="../first-step/">最初の一歩</a>
+    <a href="../proposal/">提案について</a>
+  </div>
+</div>
+
+<main>
+
+<!-- 1. Hero -->
+<section class="page-hero">
+  <div class="container">
+    <p class="page-hero__label en">Execution Roadmap</p>
+    <h1 class="page-hero__title">実行ロードマップ</h1>
+    <p class="page-hero__subtitle">
+      函館観光戦略を、どう実現するか。<br>
+      構想を構想で終わらせないために、どう動くかを考えました。
+    </p>
+  </div>
+</section>
+
+<!-- 2. 3フェーズの結論 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Conclusion First</p>
+    <h2 class="section-title">実行の全体像</h2>
+    <p class="body-text mt-16">
+      函館観光戦略の実行は、3つの段階で進めます。<br>
+      まず小さく試して手応えを確かめる。うまくいったものを常設化する。そして最終的に、函館の都市ブランドとして定着させます。
+    </p>
+
+    <div class="grid-3 mt-32">
+      <div class="kpi-card fade-in-stagger" style="border-top:4px solid var(--navy-600);">
+        <p class="section-label en" style="margin-bottom:8px;">Phase 1</p>
+        <div class="stat-number en" style="font-size:28px;">0-1<span class="stat-unit">年</span></div>
+        <div class="stat-label" style="font-size:16px;font-weight:700;color:var(--navy-800);margin-top:8px;">実証する</div>
+        <p class="body-text mt-8" style="font-size:13px;">
+          まずは社会実験で試す。<br>
+          小さく始めて、データで手応えを確かめます。
+        </p>
+      </div>
+      <div class="kpi-card fade-in-stagger" style="border-top:4px solid var(--accent);">
+        <p class="section-label en" style="margin-bottom:8px;">Phase 2</p>
+        <div class="stat-number en" style="font-size:28px;">1-3<span class="stat-unit">年</span></div>
+        <div class="stat-label" style="font-size:16px;font-weight:700;color:var(--navy-800);margin-top:8px;">常設化する</div>
+        <p class="body-text mt-8" style="font-size:13px;">
+          手応えのあった施策を本格化。<br>
+          施設の整備や制度づくりに進みます。
+        </p>
+      </div>
+      <div class="kpi-card fade-in-stagger" style="border-top:4px solid var(--green);">
+        <p class="section-label en" style="margin-bottom:8px;">Phase 3</p>
+        <div class="stat-number en" style="font-size:28px;">3-10<span class="stat-unit">年</span></div>
+        <div class="stat-label" style="font-size:16px;font-weight:700;color:var(--navy-800);margin-top:8px;">都市ブランドにする</div>
+        <p class="body-text mt-8" style="font-size:13px;">
+          「滞在する街・函館」を都市ブランドとして確立。<br>
+          国内外に知られ、民間投資が自然に集まる状態を目指します。
+        </p>
+      </div>
+    </div>
+
+    <div class="flow-diagram mt-32">
+      <div class="flow-step">実証する</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step">常設化する</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step flow-step--accent">都市ブランドにする</div>
+    </div>
+    <p class="caption text-center mt-8">一足飛びにはいかない。だからこそ、一つずつ確かめながら進めます</p>
+  </div>
+</section>
+
+<!-- 3. 推進体制 -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Governance</p>
+    <h2 class="section-title">推進体制</h2>
+    <p class="body-text mt-16">
+      この戦略は、観光部門だけでは動かせません。<br>
+      行政、民間、交通事業者、観光関係者——この4者が同じ方向を向いて動ける体制をつくる必要があります。
+    </p>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>行政（函館市）</h3>
+        <p class="body-text">
+          制度設計、規制緩和、公共空間の活用許可。<br>
+          庁内横断の推進会議を設置し、観光部門・都市計画・交通・文化・財政を統合する。<br>
+          この戦略の司令塔は、行政が担うしかありません。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>民間事業者</h3>
+        <p class="body-text">
+          事業運営、投資、サービス設計。<br>
+          Night Economyの飲食・イベント運営、ワーケーション施設整備、体験コンテンツ開発。<br>
+          行政が場を整え、民間が事業を動かす。この役割分担が基本です。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>交通事業者</h3>
+        <p class="body-text">
+          JR北海道、函館バス、函館市電。<br>
+          Experience Linerの運行協議、夜間交通の拡充、統合チケット設計。<br>
+          回遊の仕組みは、交通事業者の協力なしには実現しません。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>観光関係者</h3>
+        <p class="body-text">
+          宿泊施設、ガイド事業者、商工会議所。<br>
+          現場の知見と顧客接点を施策にフィードバック。<br>
+          KPI測定・効果検証の実行パートナー。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">司令塔の必要性</div>
+      <p class="insight-box__text">
+        それぞれの部門がバラバラに進めても、かみ合いません。<br>
+        「函館観光戦略推進会議」のような庁内横断の司令塔を設置し、<br>
+        5つの施策を一つの戦略として束ね、全体を見渡せる場が必要です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 最初の180日でやること -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">First 180 Days</p>
+    <h2 class="section-title">最初の180日でやること</h2>
+    <p class="body-text mt-16">
+      戦略が本当に動き出すかどうかは、最初の半年で決まります。<br>
+      まずこの5つに手をつけます。
+    </p>
+
+    <div class="mt-32">
+      <div class="priority-card fade-in">
+        <div class="priority-card__num en">01</div>
+        <div>
+          <div class="priority-card__title">推進会議の立ち上げ</div>
+          <p class="priority-card__desc">
+            庁内横断の「函館観光戦略推進会議」を設置。観光・都市計画・交通・文化・財政の関係部局と、民間代表・交通事業者を含む体制を整えます。
+          </p>
+          <p class="priority-card__meta en">0-30 DAYS ／ 行政主導</p>
+        </div>
+      </div>
+      <div class="priority-card fade-in">
+        <div class="priority-card__num en">02</div>
+        <div>
+          <div class="priority-card__title">Night Economy 社会実験</div>
+          <p class="priority-card__desc">
+            港エリアで週末限定のナイトマーケットを試験開催。来場者数・消費額・満足度を測定し、常設化の判断材料を得る。コストが低く、最も早く手応えが見える施策です。
+          </p>
+          <p class="priority-card__meta en">30-90 DAYS ／ 行政 + 民間</p>
+        </div>
+      </div>
+      <div class="priority-card fade-in">
+        <div class="priority-card__num en">03</div>
+        <div>
+          <div class="priority-card__title">Goryokaku 2.0 基本設計の開始</div>
+          <p class="priority-card__desc">
+            五稜郭エリアの体験施設・夜間活用の基本構想を策定開始。関係者ヒアリング、先行事例調査、施設規模・事業スキームの検討。
+          </p>
+          <p class="priority-card__meta en">60-180 DAYS ／ 行政 + コンサルタント</p>
+        </div>
+      </div>
+      <div class="priority-card fade-in">
+        <div class="priority-card__num en">04</div>
+        <div>
+          <div class="priority-card__title">Experience Liner 協議の開始</div>
+          <p class="priority-card__desc">
+            JR北海道との連携協議を開始。臨時運行・車両改装の可能性、運行スキーム、費用分担の基礎検討。交通事業者との関係構築が先決。
+          </p>
+          <p class="priority-card__meta en">30-120 DAYS ／ 行政 + JR北海道</p>
+        </div>
+      </div>
+      <div class="priority-card fade-in">
+        <div class="priority-card__num en">05</div>
+        <div>
+          <div class="priority-card__title">KPI測定設計</div>
+          <p class="priority-card__desc">
+            各施策の効果を定量的に測定するKPI体系を設計。観光消費額、滞在日数、夜間消費率、体験消費比率、エリア別回遊率。データで判断する文化を、最初の段階から根づかせます。
+          </p>
+          <p class="priority-card__meta en">0-90 DAYS ／ 行政 + 調査機関</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. フェーズ別詳細 -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Phase Details</p>
+    <h2 class="section-title">フェーズ別の実行計画</h2>
+
+    <!-- Phase 1-1: 0-90日 -->
+    <div class="phase-card mt-32 fade-in">
+      <div class="phase-card__period en">0 - 90 DAYS</div>
+      <div class="phase-card__title">調査・合意形成</div>
+      <div class="phase-card__grid">
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">やること</div>
+          <p class="phase-card__actor-list">
+            推進会議の立ち上げ<br>
+            観光動向の追加調査<br>
+            関係者ヒアリング（行政・民間・交通）<br>
+            KPI測定体系の設計
+          </p>
+        </div>
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">達成状態</div>
+          <p class="phase-card__actor-list">
+            推進体制ができている<br>
+            各施策の実施判断に必要なデータが揃っている<br>
+            関係者のあいだで方向性が共有されている
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 1-2: 90-180日 -->
+    <div class="phase-card fade-in">
+      <div class="phase-card__period en">90 - 180 DAYS</div>
+      <div class="phase-card__title">実証実験</div>
+      <div class="phase-card__grid">
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">やること</div>
+          <p class="phase-card__actor-list">
+            Night Economy 社会実験（週末ナイトマーケット）<br>
+            五稜郭 営業延長の試験運用<br>
+            Jomon 体験コンテンツのプロトタイプ<br>
+            Experience Liner 臨時運行の協議
+          </p>
+        </div>
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">達成状態</div>
+          <p class="phase-card__actor-list">
+            Night Economyの需要が数値で確認されている<br>
+            五稜郭の夜間需要が測定されている<br>
+            次のステップに進むかどうか、判断できる材料が揃っている
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 1-3: 180日-1年 -->
+    <div class="phase-card fade-in">
+      <div class="phase-card__period en">180 DAYS - 1 YEAR</div>
+      <div class="phase-card__title">本格着手</div>
+      <div class="phase-card__grid">
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">やること</div>
+          <p class="phase-card__actor-list">
+            Night Economy 通年開催への移行<br>
+            Goryokaku 2.0 基本計画策定<br>
+            Experience Liner 臨時運行開始<br>
+            夜間交通の拡充（バス・市電）<br>
+            Jomon Experience 施設整備の基本設計
+          </p>
+        </div>
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">達成状態</div>
+          <p class="phase-card__actor-list">
+            Night Economyが通年で稼働している<br>
+            五稜郭の再設計が具体化している<br>
+            Experience Linerが期間限定で運行している<br>
+            夜間の消費データが蓄積されている
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 2: 1-3年 -->
+    <div class="phase-card fade-in">
+      <div class="phase-card__period en">1 - 3 YEARS</div>
+      <div class="phase-card__title">常設化・施策展開</div>
+      <div class="phase-card__grid">
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">やること</div>
+          <p class="phase-card__actor-list">
+            Goryokaku 2.0 施設建設・開業<br>
+            Jomon Experience 施設整備・開業<br>
+            Experience Liner 定期運行化<br>
+            Summer Capital 宣言・夏季イベント集約<br>
+            ワーケーション拠点の整備
+          </p>
+        </div>
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">達成状態</div>
+          <p class="phase-card__actor-list">
+            5施策すべてが稼働している<br>
+            滞在日数・消費額の増加が数値で確認されている<br>
+            民間投資が拡大し始めている<br>
+            「滞在都市・函館」の認知が形成され始めている
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 3: 3-10年 -->
+    <div class="phase-card fade-in">
+      <div class="phase-card__period en">3 - 10 YEARS</div>
+      <div class="phase-card__title">都市ブランド確立</div>
+      <div class="phase-card__grid">
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">やること</div>
+          <p class="phase-card__actor-list">
+            Summer Capital 国際ブランド確立<br>
+            施策間の連動最適化<br>
+            民間投資の本格化・自走化<br>
+            通年型観光インフラの完成<br>
+            観光消費+150億円の達成
+          </p>
+        </div>
+        <div class="phase-card__actor">
+          <div class="phase-card__actor-label">達成状態</div>
+          <p class="phase-card__actor-list">
+            函館が「滞在都市」として国内外で認知されている<br>
+            行政が引っ張る段階から、民間が自分で動く段階に移っている<br>
+            観光が市民経済の持続的な成長エンジンになっている
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 施策別ロードマップ表 -->
+<section class="section">
+  <div class="container--wide fade-in">
+    <p class="section-label en">Project Timeline</p>
+    <h2 class="section-title">施策別ロードマップ</h2>
+    <p class="body-text mt-16">
+      それぞれの施策が、いつ動き出し、いつ本格化するか。一覧にまとめました。
+    </p>
+
+    <table class="roadmap-table mt-32">
+      <thead>
+        <tr>
+          <th>施策</th>
+          <th>0-90日</th>
+          <th>90日-180日</th>
+          <th>180日-1年</th>
+          <th>1-3年</th>
+          <th>3-10年</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Night Economy</td>
+          <td class="rm-cell--prep">調査</td>
+          <td class="rm-cell--active">社会実験</td>
+          <td class="rm-cell--active">通年化</td>
+          <td class="rm-cell--expand">拡張</td>
+          <td class="rm-cell--expand">定着</td>
+        </tr>
+        <tr>
+          <td>Goryokaku 2.0</td>
+          <td class="rm-cell--prep">調査</td>
+          <td class="rm-cell--prep">試験延長</td>
+          <td class="rm-cell--active">基本設計</td>
+          <td class="rm-cell--active">建設・開業</td>
+          <td class="rm-cell--expand">拡張</td>
+        </tr>
+        <tr>
+          <td>Jomon Experience</td>
+          <td class="rm-cell--prep">調査</td>
+          <td class="rm-cell--active">プロトタイプ</td>
+          <td class="rm-cell--prep">基本設計</td>
+          <td class="rm-cell--active">整備・開業</td>
+          <td class="rm-cell--expand">拡張</td>
+        </tr>
+        <tr>
+          <td>Experience Liner</td>
+          <td class="rm-cell--prep">協議開始</td>
+          <td class="rm-cell--prep">JR協議</td>
+          <td class="rm-cell--active">臨時運行</td>
+          <td class="rm-cell--active">定期運行</td>
+          <td class="rm-cell--expand">拡張</td>
+        </tr>
+        <tr>
+          <td>Summer Capital</td>
+          <td class="rm-cell--prep">調査</td>
+          <td class="rm-cell--prep">構想策定</td>
+          <td class="rm-cell--prep">準備</td>
+          <td class="rm-cell--active">宣言・展開</td>
+          <td class="rm-cell--expand">ブランド確立</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="mt-16" style="display:flex;gap:24px;flex-wrap:wrap;">
+      <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gray-600);"><span style="width:14px;height:14px;border-radius:3px;background:var(--navy-100);display:inline-block;"></span> 準備・調査</span>
+      <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gray-600);"><span style="width:14px;height:14px;border-radius:3px;background:var(--navy-600);display:inline-block;"></span> 実証・実行</span>
+      <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gray-600);"><span style="width:14px;height:14px;border-radius:3px;background:var(--accent-light);display:inline-block;"></span> 拡張・定着</span>
+    </div>
+  </div>
+</section>
+
+<!-- 7. 到達状態 -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Milestones</p>
+    <h2 class="section-title">到達状態</h2>
+    <p class="body-text mt-16">
+      この戦略が動き出したら、函館はどう変わっていくか。<br>
+      3つの時点で描いてみます。
+    </p>
+
+    <div class="grid-3 mt-32">
+      <div class="analysis-block fade-in-stagger" style="border-top:4px solid var(--navy-600);">
+        <h3>1年後</h3>
+        <p class="body-text">
+          Night Economyが通年で稼働。<br>
+          五稜郭の夜間営業が定着。<br>
+          Experience Linerが期間限定で運行。<br>
+          夜間消費率が測定可能になっている。<br>
+          「函館の夜が変わり始めた」という声が出始める。
+        </p>
+      </div>
+      <div class="analysis-block fade-in-stagger" style="border-top:4px solid var(--accent);">
+        <h3>3年後</h3>
+        <p class="body-text">
+          5施策すべてが稼働。<br>
+          五稜郭が3〜4時間の滞在拠点になっている。<br>
+          Summer Capitalが宣言され、夏季の長期滞在が増え始める。<br>
+          観光消費額に明確な増加が見られる。<br>
+          「函館は変わった」と言われ始める。
+        </p>
+      </div>
+      <div class="analysis-block fade-in-stagger" style="border-top:4px solid var(--green);">
+        <h3>10年後</h3>
+        <p class="body-text">
+          「滞在都市・函館」が定着。<br>
+          年間観光消費+150億円が達成圏内に。<br>
+          民間投資が自走し、行政は環境整備に集中。<br>
+          国際的に「日本の避暑都市」として認知されている。<br>
+          観光が市民経済の成長エンジンになっている。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. 実行の原則 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Execution Principles</p>
+    <h2 class="section-title">実行の原則</h2>
+    <p class="body-text mt-16">
+      この戦略を動かし続けるために、守りたい原則が4つあります。
+    </p>
+
+    <div class="grid-2 mt-32">
+      <div class="analysis-block">
+        <h3>小さく始める</h3>
+        <p class="body-text">
+          いきなり全部はやらない。<br>
+          Night Economyの社会実験、Experience Linerの臨時運行など、低リスクで効果を検証できる施策から着手する。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>実証して広げる</h3>
+        <p class="body-text">
+          「やってみて、データで判断する」を基本とする。<br>
+          効果が確認された施策から段階的に常設化・拡張する。手応えなしに広げることはしません。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>データで改善する</h3>
+        <p class="body-text">
+          KPI測定を初期段階から設計し、施策の効果を定量的に追跡する。<br>
+          「うまくいった気がする」で終わらせない。数字で確かめる文化を根づかせます。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <h3>官民で役割分担する</h3>
+        <p class="body-text">
+          行政は制度設計と場の提供。民間は事業運営と投資。<br>
+          どちらか片方だけでは実現しません。役割を明確にして、同じ方向を向きます。
+        </p>
+      </div>
+    </div>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">最も重要な原則</div>
+      <p class="insight-box__text">
+        一度きりのイベントで終わらせない。<br>
+        社会実験を「やって終わり」にせず、データを蓄積し、<br>
+        常設化→拡張→都市ブランドへと段階的に積み上げる。<br>
+        この「積み上げていく文化」こそが、戦略を本物にする鍵です。
+      </p>
+    </div>
+
+    <div class="grid-2 mt-40">
+      <a href="../impact/" class="next-page">
+        <div>
+          <div class="next-page__label">経済効果</div>
+          <div class="next-page__title">+150億円の根拠 →</div>
+        </div>
+        <div class="next-page__arrow">&rarr;</div>
+      </a>
+      <a href="../proposal/" class="next-page">
+        <div>
+          <div class="next-page__label">提案について</div>
+          <div class="next-page__title">提案の趣旨と立場 →</div>
+        </div>
+        <div class="next-page__arrow">&rarr;</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p style="font-size:12px;color:var(--gray-400);margin-bottom:6px;">お問い合わせ：<a href="mailto:futoshitatoki@me.com" style="color:var(--gray-400);">futoshitatoki@me.com</a></p>
+      <p>&copy; 2026 Hakodate Tourism Strategy — 函館市民提言</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

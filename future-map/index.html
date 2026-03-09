@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Map — HAKODATE TOURISM STRATEGY</title>
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<style>
+/* ================================================
+   Future Map — Page-specific styles
+   ================================================ */
+
+/* --- Project list --- */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.project-item:hover {
+  border-color: var(--navy-300);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.project-item__num {
+  font-family: var(--font-en);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--navy-600);
+}
+.project-item__body {
+  flex: 1;
+  min-width: 0;
+}
+.project-item__title {
+  font-family: var(--font-en);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy-800);
+}
+.project-item__desc {
+  font-size: 14px;
+  color: var(--gray-600);
+  margin-top: 2px;
+}
+.project-item__arrow {
+  font-size: 18px;
+  color: var(--gray-300);
+  flex-shrink: 0;
+}
+.project-item:hover .project-item__arrow {
+  color: var(--navy-400);
+}
+
+/* --- Result KPI --- */
+.result-kpi {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.result-kpi__item {
+  text-align: center;
+}
+.result-kpi__value {
+  font-family: var(--font-en);
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--navy-800);
+  line-height: 1;
+}
+.result-kpi__unit {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+.result-kpi__label {
+  font-size: 13px;
+  color: var(--gray-600);
+  margin-top: 6px;
+}
+.result-kpi__arrow {
+  font-size: 28px;
+  color: var(--navy-300);
+}
+
+/* --- Closing Statement --- */
+.closing-statement {
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--navy-800);
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-upper">
+    <div class="header-inner">
+      <a href="../" class="header-logo">
+        <span class="header-logo__main en">HAKODATE 2035</span>
+        <span class="header-logo__sub en">Tourism Strategy</span>
+      </a>
+      <nav class="header-nav">
+        <a href="../">全体像</a>
+        <a href="../summary/">サマリー</a>
+        <a href="../why-hakodate/">なぜ函館</a>
+        <a href="../analysis/">データ分析</a>
+        <a href="../strategy/">全体戦略</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown__toggle">主要施策</button>
+          <div class="nav-dropdown__menu">
+            <a href="../night-economy/">Night Economy</a>
+            <a href="../goryokaku-2/">Goryokaku 2.0</a>
+            <a href="../jomon/">Jomon Experience</a>
+            <a href="../experience-liner/">Experience Liner</a>
+            <a href="../summer-capital/">Summer Capital</a>
+          </div>
+        </div>
+        <a href="../impact/">経済効果</a>
+        <a href="../roadmap/">実行計画</a>
+        <a href="../first-step/">最初の一歩</a>
+        <a href="../proposal/">提案について</a>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu__section">
+    <div class="mobile-menu__label">Navigation</div>
+    <a href="../">全体像</a>
+    <a href="../summary/">サマリー</a>
+    <a href="../why-hakodate/">なぜ函館</a>
+    <a href="../analysis/">データ分析</a>
+    <a href="../strategy/">全体戦略</a>
+    <button class="mobile-accordion__toggle">主要施策</button>
+    <div class="mobile-accordion__body">
+      <a href="../night-economy/">Night Economy</a>
+      <a href="../goryokaku-2/">Goryokaku 2.0</a>
+      <a href="../jomon/">Jomon Experience</a>
+      <a href="../experience-liner/">Experience Liner</a>
+      <a href="../summer-capital/">Summer Capital</a>
+    </div>
+    <a href="../impact/">経済効果</a>
+    <a href="../roadmap/">実行計画</a>
+    <a href="../first-step/">最初の一歩</a>
+    <a href="../proposal/">提案について</a>
+  </div>
+</div>
+
+<main>
+
+<!-- ================================================
+     Hero
+     ================================================ -->
+<section class="page-hero">
+  <div class="container fade-in">
+    <p class="page-hero__label en">Hakodate Future Map</p>
+    <h1 class="page-hero__title">函館観光の未来構造</h1>
+    <p class="page-hero__subtitle" style="max-width:560px;">
+      本戦略は、新しい観光名所を増やす計画ではありません。<br>
+      既存の都市資源を再編集し、<br>
+      函館を「滞在する都市」に変える都市構造の再設計です。
+    </p>
+  </div>
+</section>
+
+<!-- ================================================
+     構造図
+     ================================================ -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Strategy Structure</p>
+    <h2 class="section-title">戦略の全体構造</h2>
+
+    <div class="flow-diagram mt-32">
+      <div class="flow-step">構造課題</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step flow-step--accent">戦略</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step flow-step--accent">5施策</div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-step flow-step--accent">経済効果</div>
+    </div>
+    <p class="caption text-center mt-16">課題の構造分析から施策を設計し、経済効果へつなげる一貫した戦略</p>
+  </div>
+</section>
+
+<!-- ================================================
+     5施策
+     ================================================ -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Five Projects</p>
+    <h2 class="section-title">5つの施策</h2>
+
+    <div class="project-list mt-32">
+      <a href="../night-economy/" class="project-item">
+        <div class="project-item__num en">01</div>
+        <div class="project-item__body">
+          <div class="project-item__title">Night Economy</div>
+          <div class="project-item__desc">港エリア夜間経済</div>
+        </div>
+        <div class="project-item__arrow">&rarr;</div>
+      </a>
+      <a href="../goryokaku-2/" class="project-item">
+        <div class="project-item__num en">02</div>
+        <div class="project-item__body">
+          <div class="project-item__title">Goryokaku 2.0</div>
+          <div class="project-item__desc">五稜郭滞在拠点化</div>
+        </div>
+        <div class="project-item__arrow">&rarr;</div>
+      </a>
+      <a href="../jomon/" class="project-item">
+        <div class="project-item__num en">03</div>
+        <div class="project-item__body">
+          <div class="project-item__title">Jomon Experience</div>
+          <div class="project-item__desc">世界遺産体験消費</div>
+        </div>
+        <div class="project-item__arrow">&rarr;</div>
+      </a>
+      <a href="../experience-liner/" class="project-item">
+        <div class="project-item__num en">04</div>
+        <div class="project-item__body">
+          <div class="project-item__title">Experience Liner</div>
+          <div class="project-item__desc">18分の到着体験</div>
+        </div>
+        <div class="project-item__arrow">&rarr;</div>
+      </a>
+      <a href="../summer-capital/" class="project-item">
+        <div class="project-item__num en">05</div>
+        <div class="project-item__body">
+          <div class="project-item__title">Summer Capital</div>
+          <div class="project-item__desc">避暑都市ブランド</div>
+        </div>
+        <div class="project-item__arrow">&rarr;</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     結果
+     ================================================ -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Expected Outcome</p>
+    <h2 class="section-title">戦略がもたらす結果</h2>
+
+    <div class="result-kpi mt-40">
+      <div class="result-kpi__item">
+        <div class="result-kpi__value en">2<span class="result-kpi__unit">泊</span></div>
+        <div class="result-kpi__label">現在の平均滞在</div>
+      </div>
+      <div class="result-kpi__arrow">&rarr;</div>
+      <div class="result-kpi__item">
+        <div class="result-kpi__value en">3<span class="result-kpi__unit">泊</span></div>
+        <div class="result-kpi__label">戦略実行後</div>
+      </div>
+    </div>
+
+    <div class="kpi-card mt-32" style="max-width:320px;margin-left:auto;margin-right:auto;">
+      <div class="stat-number en" style="font-size:40px;">+150<span class="stat-unit">億円</span></div>
+      <div class="stat-label">年間経済効果</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     Closing
+     ================================================ -->
+<section class="section section--light-navy">
+  <div class="container fade-in">
+    <p class="closing-statement">
+      函館の成長余地は、<br>
+      新しい名所を一つ増やすことではなく、<br>
+      すでにある魅力を<br>
+      都市全体の滞在構造へ編み直すことにある。
+    </p>
+  </div>
+</section>
+
+<!-- ================================================
+     Navigation
+     ================================================ -->
+<section class="section">
+  <div class="container fade-in">
+    <div class="grid-2">
+      <a href="../strategy/" class="next-page" style="margin-top:0;">
+        <div>
+          <div class="next-page__label">戦略の全体像</div>
+          <div class="next-page__title">全体戦略 &rarr;</div>
+        </div>
+        <div class="next-page__arrow">&rarr;</div>
+      </a>
+      <a href="../impact/" class="next-page" style="margin-top:0;">
+        <div>
+          <div class="next-page__label">経済効果</div>
+          <div class="next-page__title">+150億円の根拠 &rarr;</div>
+        </div>
+        <div class="next-page__arrow">&rarr;</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p style="font-size:12px;color:var(--gray-400);margin-bottom:6px;">お問い合わせ：<a href="mailto:futoshitatoki@me.com" style="color:var(--gray-400);">futoshitatoki@me.com</a></p>
+      <p>&copy; 2026 Hakodate Tourism Strategy — 函館市民提言</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

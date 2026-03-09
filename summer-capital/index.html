@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Capital — HAKODATE TOURISM STRATEGY</title>
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-upper">
+    <div class="header-inner">
+      <a href="../" class="header-logo">
+        <span class="header-logo__main en">HAKODATE 2035</span>
+        <span class="header-logo__sub en">Tourism Strategy</span>
+      </a>
+      <nav class="header-nav">
+        <a href="../">全体像</a>
+        <a href="../summary/">サマリー</a>
+        <a href="../why-hakodate/">なぜ函館</a>
+        <a href="../analysis/">データ分析</a>
+        <a href="../strategy/">全体戦略</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown__toggle is-active">主要施策</button>
+          <div class="nav-dropdown__menu">
+            <a href="../night-economy/">Night Economy</a>
+            <a href="../goryokaku-2/">Goryokaku 2.0</a>
+            <a href="../jomon/">Jomon Experience</a>
+            <a href="../experience-liner/">Experience Liner</a>
+            <a href="../summer-capital/">Summer Capital</a>
+          </div>
+        </div>
+        <a href="../impact/">経済効果</a>
+        <a href="../roadmap/">実行計画</a>
+        <a href="../first-step/">最初の一歩</a>
+        <a href="../proposal/">提案について</a>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="header-lower">
+    <div class="header-lower__inner">
+      <a href="../night-economy/">Night Economy</a>
+      <a href="../goryokaku-2/">Goryokaku 2.0</a>
+      <a href="../jomon/">Jomon Experience</a>
+      <a href="../experience-liner/">Experience Liner</a>
+      <a href="../summer-capital/" class="is-active">Summer Capital</a>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu__section">
+    <div class="mobile-menu__label">Navigation</div>
+    <a href="../">全体像</a>
+    <a href="../summary/">サマリー</a>
+    <a href="../why-hakodate/">なぜ函館</a>
+    <a href="../analysis/">データ分析</a>
+    <a href="../strategy/">全体戦略</a>
+    <button class="mobile-accordion__toggle is-active">主要施策</button>
+    <div class="mobile-accordion__body is-open">
+      <a href="../night-economy/">Night Economy</a>
+      <a href="../goryokaku-2/">Goryokaku 2.0</a>
+      <a href="../jomon/">Jomon Experience</a>
+      <a href="../experience-liner/">Experience Liner</a>
+      <a href="../summer-capital/" class="is-active">Summer Capital</a>
+    </div>
+    <a href="../impact/">経済効果</a>
+    <a href="../roadmap/">実行計画</a>
+    <a href="../first-step/">最初の一歩</a>
+    <a href="../proposal/">提案について</a>
+  </div>
+</div>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="page-hero__label en">Project 05 — City Vision</p>
+    <h1 class="page-hero__title">Hakodate Summer Capital</h1>
+    <p class="page-hero__subtitle">
+      観光施策ではなく、都市ビジョン。<br>
+      函館を、日本の「避暑首都」として再定義する。
+    </p>
+    <div class="hero-visual">
+      <img src="../assets/img/projects/summer/summer_hero.jpg" alt="函館・元町公園の緑" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- 気候優位 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Climate Advantage</p>
+    <h2 class="section-title">なぜ函館は"住める避暑都市"なのか</h2>
+    <p class="body-text mt-16">
+      近年は函館も暑い日が増えています。しかし、2024〜2025年の実績でも、7〜8月の平均気温は約24〜25℃にとどまり、東京・京都を大きく下回ります。<br>
+      最近の暑い夏でも、函館は本州主要都市より明確に涼しい——これは実績データが示す事実です。
+    </p>
+
+    <!-- 7月 比較グラフ（SVG） -->
+    <div class="figure mt-40">
+      <img src="../assets/img/charts/temp_july_2024_2025.svg" alt="7月平均気温比較：函館23.8℃、東京28.6℃、京都29.9℃（2024〜2025平均）" loading="lazy" style="width:100%;height:auto;border-radius:4px;">
+    </div>
+
+    <!-- 8月 比較グラフ（SVG） -->
+    <div class="figure mt-24">
+      <img src="../assets/img/charts/temp_august_2024_2025.svg" alt="8月平均気温比較：函館24.8℃、東京29.3℃、京都30.2℃（2024〜2025平均）" loading="lazy" style="width:100%;height:auto;border-radius:4px;">
+    </div>
+
+    <!-- 年別内訳テーブル -->
+    <details style="margin-top:24px;">
+      <summary style="font-size:13px;font-weight:600;color:var(--navy-600);cursor:pointer;">年別の詳細データを見る</summary>
+      <table class="impact-table mt-16" style="font-size:14px;">
+        <thead>
+          <tr>
+            <th></th>
+            <th style="text-align:center;">函館</th>
+            <th style="text-align:center;">東京</th>
+            <th style="text-align:center;">京都</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight:600;">7月 2024</td>
+            <td style="text-align:center;color:var(--navy-600);font-weight:700;">22.8℃</td>
+            <td style="text-align:center;">28.7℃</td>
+            <td style="text-align:center;">29.4℃</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">7月 2025</td>
+            <td style="text-align:center;color:var(--navy-600);font-weight:700;">24.8℃</td>
+            <td style="text-align:center;">28.4℃</td>
+            <td style="text-align:center;">30.3℃</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">8月 2024</td>
+            <td style="text-align:center;color:var(--navy-600);font-weight:700;">24.7℃</td>
+            <td style="text-align:center;">29.0℃</td>
+            <td style="text-align:center;">30.1℃</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">8月 2025</td>
+            <td style="text-align:center;color:var(--navy-600);font-weight:700;">24.9℃</td>
+            <td style="text-align:center;">29.6℃</td>
+            <td style="text-align:center;">30.2℃</td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+
+    <p class="caption mt-16" style="font-size:12px;color:var(--gray-400);">※気象庁の2024〜2025年 月別実績値をもとに作成</p>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">視点</div>
+      <p class="insight-box__text" style="font-size:15px;font-weight:500;">
+        最近の暑い夏でも、函館は東京より約5℃、京都より約6℃涼しい。
+      </p>
+      <p class="insight-box__text mt-16">
+        直近2年平均でも、函館の7〜8月は東京より約4.5〜4.8℃、京都より約5.4〜6.1℃低い。近年は函館も暑い日が増えているが、それでも本州主要都市と比べると、夏の居住快適性には明確な差がある。この気候差は温暖化が進むほど価値が増す、函館の構造的な資産です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 夏の二拠点生活 -->
+<section class="section section--light-navy">
+  <div class="container fade-in">
+    <p class="section-label en">Emerging Demand</p>
+    <h2 class="section-title">いま、函館は"夏を逃がす都市"として選ばれ始めている</h2>
+    <p class="body-text mt-16">
+      日本の夏は、もはや「旅行の季節」ではなく、生活そのものを見直す季節になりつつあります。<br>
+      猛暑と熱帯夜が常態化するなかで、夏の数週間だけでも涼しい場所で過ごしたい、東京圏との二拠点で暮らしたい——そう考える人は確実に増えています。
+    </p>
+    <p class="body-text mt-16">
+      函館はその候補地として、すでに現実味を帯びています。<br>
+      海があり、風が通り、都市機能があり、新幹線でのアクセスも良い。観光地である前に、「夏に人が暮らしたくなる都市」としての条件を備えています。
+    </p>
+
+    <!-- 外部評価 -->
+    <div class="mt-32">
+      <h3>外部から見た函館の評価</h3>
+      <div class="grid-2 mt-16">
+        <div class="analysis-block">
+          <h4>テレビ朝日の報道</h4>
+          <p class="body-text">
+            玉川徹氏が函館を緊急取材した番組では、函館は観測開始以来150年以上で猛暑日がわずか1日しかないことが紹介されました。東京との大きな気温差とともに、二地域居住や移住相談が増えている実情も取り上げられています。
+          </p>
+        </div>
+        <div class="analysis-block">
+          <h4>函館出身の著名人の発信</h4>
+          <p class="body-text">
+            GLAYのTERU氏は、年間の約3分の1を函館で過ごしていると公に発信し、その過ごしやすさを自ら語っています。また、松岡昌宏氏も東京と函館の二拠点生活を公言しています。函館の夏居住の快適さは、実際に暮らす人の言葉で広がり始めています。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">視点</div>
+      <p class="insight-box__text">
+        これは偶然の注目ではありません。猛暑化が進む日本において、函館のように夏季平均24〜25℃で都市機能を備えた場所は極めて限られています。だからこそ函館は、単なる避暑地ではなく、日本の"Summer Capital"を目指せる都市です。
+      </p>
+      <p class="insight-box__text mt-16">
+        函館は、夏に訪れる街から、夏に暮らす街へ進化できる。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Why City Vision -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Why City Vision</p>
+    <h2 class="section-title">なぜ「観光施策」ではなく「都市ビジョン」なのか</h2>
+    <p class="body-text mt-16">
+      函館観光の構造課題は、個別の施策を重ねるだけでは解決しません。<br>
+      「函館とは何の街か」という問いへの答えが必要です。
+    </p>
+
+    <!-- Image break -->
+    <div class="figure mt-32">
+      <div class="img-grid img-grid--2">
+        <img src="../assets/img/projects/summer/summer_hero.jpg" alt="函館・元町公園の緑" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        <img src="../assets/img/projects/summer/summer_event_city.jpg" alt="函館市電" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+      </div>
+      <p class="figure__caption"><strong>Fig.1</strong> — 函館の夏。涼しい気候、海、緑、歴史的街並みが共存する。</p>
+    </div>
+
+    <p class="body-text mt-24">
+      Summer Capitalは、その問いに対する一つの答えです。<br>
+      「日本で最も快適な夏を過ごせる都市」という都市アイデンティティの提案。
+    </p>
+    <p class="body-text mt-16">
+      この都市ビジョンは、他の4施策（Night Economy、Goryokaku 2.0、
+      Jomon Experience、Experience Liner）の上位概念として機能し、<br>
+      個別施策に一貫した方向性を与える。
+    </p>
+  </div>
+</section>
+
+<!-- サマーキャピタル構想 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Vision Framework</p>
+    <h2 class="section-title">サマーキャピタル構想</h2>
+    <p class="section-lead">
+      避暑都市宣言を起点に、<br>
+      4つの都市機能を段階的に整備する。
+    </p>
+
+    <div class="grid-2 mt-40">
+      <div class="analysis-block">
+        <h3>夏季イベント都市</h3>
+        <p class="body-text">
+          音楽フェス、アート展、食イベントを夏季に集約。
+          「函館の夏に行く理由」を創出する。
+        </p>
+        <div class="figure mt-16">
+          <img src="../assets/img/projects/summer_event_city.jpg" alt="夏季イベント都市構想（仮）" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        </div>
+      </div>
+      <div class="analysis-block">
+        <h3>ワーケーション拠点</h3>
+        <p class="body-text">
+          涼しい環境でのリモートワーク拠点を整備。
+          コワーキング、長期滞在型アパートメント、企業合宿。
+        </p>
+        <div class="figure mt-16">
+          <img src="../assets/img/projects/summer_workation.jpg" alt="ワーケーション拠点構想（仮）" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        </div>
+      </div>
+      <div class="analysis-block">
+        <h3>涼夏の夜経済</h3>
+        <p class="body-text">
+          涼しい夏の夜を活かした屋外消費。ビーチバー、港マーケット、夕暮れクルーズ。
+        </p>
+        <div class="figure mt-16">
+          <img src="../assets/img/projects/summer_night_economy.jpg" alt="涼夏の夜経済構想（仮）" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        </div>
+      </div>
+      <div class="analysis-block">
+        <h3>長期滞在モデル</h3>
+        <p class="body-text">
+          「暮らすように過ごす」2週間滞在パッケージ。
+          富裕層・シニア・ファミリー向けに設計。
+        </p>
+        <div class="figure mt-16">
+          <img src="../assets/img/projects/summer_longstay_model.jpg" alt="長期滞在モデル構想（仮）" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        </div>
+      </div>
+    </div>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">視点</div>
+      <p class="insight-box__text">
+        函館は、夏の二拠点生活を考えるうえで現実的な条件がそろっている。人口減少や空き家増加のなかで、比較的手の届きやすい中古住宅が多く、住まいの初期コストを抑えやすい。
+      </p>
+      <p class="insight-box__text mt-16">
+        加えて、空港から市内中心部までの近さ、新函館北斗駅を介した新幹線アクセスは、首都圏との往来を前提とした暮らしにも適している。気候だけでなく、住まい・移動・滞在の現実性まで備えていることが、函館が避暑都市にとどまらず「夏の生活拠点」になり得る理由です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 世界の避暑都市 -->
+<section class="section section--gray">
+  <div class="container fade-in">
+    <p class="section-label en">Global Context</p>
+    <h2 class="section-title">世界の避暑都市に学ぶ</h2>
+    <p class="body-text mt-16">
+      ニース、バンクーバー、ポートランド。
+      世界の避暑都市は、「気候」を起点に「文化・食・体験」を重ね、
+      都市ブランドを確立してきた。
+    </p>
+
+    <div class="grid-3 mt-32">
+      <div class="analysis-block">
+        <div class="figure mb-16">
+          <img src="../assets/img/projects/summer_nice_coast.jpg" alt="ニースの海岸通り" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        </div>
+        <h3>ニース（フランス）</h3>
+        <p class="body-text">
+          地中海性気候を基盤に、アート・映画祭・美食で「南仏の首都」を確立。
+          夏季人口が通常の3倍に達する。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <div class="figure mb-16">
+          <img src="../assets/img/projects/summer_vancouver_harbor.jpg" alt="バンクーバーの港" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        </div>
+        <h3>バンクーバー（カナダ）</h3>
+        <p class="body-text">
+          夏季平均22〜23℃の涼しさと自然環境で、
+          IT企業のサマーオフィス誘致に成功。
+        </p>
+      </div>
+      <div class="analysis-block">
+        <div class="figure mb-16">
+          <img src="../assets/img/projects/summer_portland_street.jpg" alt="ポートランドの街並み" loading="lazy" style="border-radius:4px;width:100%;height:auto;">
+        </div>
+        <h3>ポートランド（米国）</h3>
+        <p class="body-text">
+          食文化・クラフトビール・アウトドアを統合し、
+          「住みたい都市」ブランドを確立。
+        </p>
+      </div>
+    </div>
+
+    <!-- 世界都市比較グラフ -->
+    <div class="figure mt-40">
+      <img src="../assets/img/charts/temp_world_cities.svg" alt="世界の避暑都市と函館 夏の平均気温比較：バンクーバー22℃、ポートランド23℃、函館24℃、ニース24℃" loading="lazy" style="width:100%;height:auto;border-radius:4px;">
+    </div>
+
+    <div class="insight-box mt-32">
+      <div class="insight-box__label en">視点</div>
+      <p class="insight-box__text">
+        函館にはこれらの都市と同等、あるいはそれ以上の資源がある。
+        気候優位、海・山の自然、歴史的建築、食文化、世界遺産。
+        足りないのは、これらを「避暑都市」として束ねる戦略だけです。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 他施策との連携 -->
+<section class="section">
+  <div class="container fade-in">
+    <p class="section-label en">Integration</p>
+    <h2 class="section-title">他施策との連携構造</h2>
+    <p class="body-text mt-16">
+      Summer Capitalは単独の施策ではなく、
+      他の4施策を束ねる上位の考え方として機能します。
+    </p>
+
+    <!-- Integration structure: grid -->
+    <div class="grid-2 mt-32">
+      <a href="../night-economy/" class="analysis-block" style="text-decoration:none;">
+        <h4>Night Economy</h4>
+        <p class="body-text">涼しい夏の夜を活かした消費設計</p>
+      </a>
+      <a href="../goryokaku-2/" class="analysis-block" style="text-decoration:none;">
+        <h4>Goryokaku 2.0</h4>
+        <p class="body-text">夏季の長時間滞在拠点として機能</p>
+      </a>
+      <a href="../jomon/" class="analysis-block" style="text-decoration:none;">
+        <h4>Jomon Experience</h4>
+        <p class="body-text">夏季長期滞在者向けの体験コンテンツ</p>
+      </a>
+      <a href="../experience-liner/" class="analysis-block" style="text-decoration:none;">
+        <h4>Experience Liner</h4>
+        <p class="body-text">避暑都市へのアクセス体験化</p>
+      </a>
+    </div>
+    <p class="caption text-center mt-16">Summer Capitalを上位概念とした施策連携構造</p>
+
+    <a href="../impact/" class="next-page mt-60">
+      <div>
+        <div class="next-page__label">Next</div>
+        <div class="next-page__title">経済効果 →</div>
+      </div>
+      <div class="next-page__arrow">&rarr;</div>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p style="font-size:12px;color:var(--gray-400);margin-bottom:6px;">お問い合わせ：<a href="mailto:futoshitatoki@me.com" style="color:var(--gray-400);">futoshitatoki@me.com</a></p>
+      <p>&copy; 2026 Hakodate Tourism Strategy — 函館市民提言</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
